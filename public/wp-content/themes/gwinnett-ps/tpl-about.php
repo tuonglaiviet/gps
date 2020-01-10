@@ -2,8 +2,8 @@
 <?php 
     get_header();
 ?>
-<section class="gbanner">
-    <h1><?php the_title() ?></h1>
+<section class="top__banner top__banner__location__addcss">
+	<h2 class="top__banner__tit">Our Locations</h2>
 </section>
 <?php 
     get_footer();

@@ -128,13 +128,13 @@ Media Query Mixins
   transition: all 0.3s ease-out; }
 
 .hidden-xs {
-  display: block; }
+  display: block !important; }
   @media screen and (max-width: 991px) {
     .hidden-xs {
       display: none !important; } }
 
 .visible-xs {
-  display: none; }
+  display: none !important; }
   @media screen and (max-width: 991px) {
     .visible-xs {
       display: block !important; } }
@@ -212,6 +212,13 @@ Media Query Mixins
   .gbutton2:hover {
     color: #9F2A24;
     opacity: 0.5; }
+
+.main__tit {
+  font-family: 'BigCaslon-Medium';
+  font-size: 90px;
+  letter-spacing: 2px;
+  line-height: 126px;
+  color: #9F2A24; }
 
 .big__tit {
   font-family: 'BigCaslon-Medium';
