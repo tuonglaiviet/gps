@@ -97,7 +97,7 @@
                 font-size: 20px;
             }
             @media only screen and (max-width: 1267px) {
-                padding-left: 95px;
+                padding-left: 85px;
                 background-size: 50px 50px;
                 width: 400px;
                 font-size: 18px;
@@ -133,8 +133,9 @@
                 background: #fff;
                 right: 82px;
                 top: 20%;
+
                 @media only screen and (max-width: 1199px) {
-                    right: 65px;
+                    right: 55px;
                 }
                 @media only screen and (max-width: 991px) {
                     display: none;
@@ -154,6 +155,7 @@
                     width: 24px;
                     height: 16px;
                     top: calc(50% - 8px);
+                    right: 20px
                 }
                 
                 @media only screen and (max-width: 991px) {

@@ -28,7 +28,7 @@
 		</a>
 		<div class="header__intro">
 			<ul>
-				<li><a href="tel:7709950630">770.995.0630</a></li>
+				<li><a href="tel:7709950630" class="header__intro__phone">770.995.0630</a></li>
 				<li><a href="#">Accepted insurance</a></li>
 				<li><a href="#">Make a payment</a></li>
 				<li>

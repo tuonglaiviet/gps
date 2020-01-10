@@ -247,7 +247,7 @@ Media Query Mixins
   box-sizing: border-box; }
   .header__container {
     padding: 0 16px; }
-  @media only screen and (max-width: 1249px) {
+  @media only screen and (max-width: 1199px) {
     .header {
       position: fixed;
       z-index: 999;
@@ -264,7 +264,7 @@ Media Query Mixins
     left: 0;
     top: 0;
     position: absolute; }
-    @media only screen and (max-width: 1249px) {
+    @media only screen and (max-width: 1199px) {
       .header:before {
         height: 9px; } }
   .header__search {
@@ -288,20 +288,20 @@ Media Query Mixins
     display: inline-block;
     box-sizing: border-box;
     padding-left: 60px; }
-    @media only screen and (max-width: 1249px) {
+    @media only screen and (max-width: 1199px) {
       .header__logo {
         padding: 18px 0 10px 12px; } }
     .header__logo img {
       height: auto;
       width: 150px; }
-      @media only screen and (max-width: 1249px) {
+      @media only screen and (max-width: 1199px) {
         .header__logo img {
           width: 30px; } }
   .header__menu {
     display: inline-block;
     position: relative;
     top: 30px;
-    padding-right: 50px;
+    padding-right: 34px;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out; }
     @media screen and (min-width: 1920px) {
@@ -310,7 +310,7 @@ Media Query Mixins
     @media only screen and (max-width: 1919px) {
       .header__menu {
         width: calc(100% - 270px); } }
-    @media only screen and (max-width: 1249px) {
+    @media only screen and (max-width: 1199px) {
       .header__menu {
         position: fixed;
         top: 61px;
@@ -329,7 +329,7 @@ Media Query Mixins
       list-style-type: none;
       padding: 0;
       margin: 0; }
-      @media only screen and (max-width: 1249px) {
+      @media only screen and (max-width: 1199px) {
         .header__menu ul {
           display: block;
           margin: 0; } }
@@ -340,7 +340,7 @@ Media Query Mixins
         @media only screen and (max-width: 1560px) {
           .header__menu ul li {
             padding: 0 10px; } }
-        @media only screen and (max-width: 1249px) {
+        @media only screen and (max-width: 1199px) {
           .header__menu ul li {
             width: 100%;
             display: block;
@@ -350,11 +350,9 @@ Media Query Mixins
           color: #9F2A24;
           text-transform: uppercase;
           display: block; }
-          @media only screen and (max-width: 1440px) {
+          @media only screen and (max-width: 1199px) {
             .header__menu ul li a {
-              font-size: 12px; } }
-          @media only screen and (max-width: 1249px) {
-            .header__menu ul li a {
+              font-size: 12px;
               padding: 10px 30px;
               display: block;
               border-top: 1px solid #bcbcbc; } }
@@ -367,7 +365,7 @@ Media Query Mixins
     @media only screen and (max-width: 1919px) {
       .header__intro {
         right: 100px; } }
-    @media only screen and (max-width: 1249px) {
+    @media only screen and (max-width: 1199px) {
       .header__intro {
         display: none; } }
     .header__intro ul li {
@@ -375,9 +373,12 @@ Media Query Mixins
       display: inline-block;
       padding: 0 10px; }
       .header__intro ul li a {
-        font-size: 15px;
-        color: #9F2A24;
-        font-size: 13px; }
+        color: #A8AEAF;
+        font-size: 13px;
+        line-height: 18px;
+        text-transform: uppercase; }
+    .header__intro__phone {
+      color: #9F2A24; }
   .header__contact {
     padding-left: 80px !important;
     padding-right: 0 !important; }
@@ -387,7 +388,7 @@ Media Query Mixins
     @media only screen and (max-width: 1440px) {
       .header__contact {
         padding-left: 30px !important; } }
-    @media only screen and (max-width: 1249px) {
+    @media only screen and (max-width: 1199px) {
       .header__contact {
         padding-left: 0 !important; } }
     @media only screen and (min-width: 1250px) {
@@ -402,7 +403,7 @@ Media Query Mixins
         width: 120px; } }
   .header__menubuton {
     display: none; }
-    @media only screen and (max-width: 1249px) {
+    @media only screen and (max-width: 1199px) {
       .header__menubuton {
         display: block;
         width: 25px;
@@ -756,7 +757,7 @@ Media Query Mixins
         font-size: 20px; } }
     @media only screen and (max-width: 1267px) {
       .top__banner__tab {
-        padding-left: 95px;
+        padding-left: 85px;
         background-size: 50px 50px;
         width: 400px;
         font-size: 18px;
@@ -791,7 +792,7 @@ Media Query Mixins
       top: 20%; }
       @media only screen and (max-width: 1199px) {
         .top__banner__tab:before {
-          right: 65px; } }
+          right: 55px; } }
       @media only screen and (max-width: 991px) {
         .top__banner__tab:before {
           display: none; } }
@@ -809,7 +810,8 @@ Media Query Mixins
         .top__banner__tab:after {
           width: 24px;
           height: 16px;
-          top: calc(50% - 8px); } }
+          top: calc(50% - 8px);
+          right: 20px; } }
       @media only screen and (max-width: 991px) {
         .top__banner__tab:after {
           background-image: url(../../images/top-icon-arrow-mb.png);
