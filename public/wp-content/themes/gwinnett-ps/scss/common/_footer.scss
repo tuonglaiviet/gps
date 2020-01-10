@@ -1,0 +1,246 @@
+.footer{
+    background: #20285C;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin-bottom: -5px;
+    &__around{
+        margin: 0 auto;
+        display: table;
+        padding: 110px 60px;
+        @media only screen and (max-width: 991px) {
+            padding: 42px 25px;
+        }
+    }
+    &__left{
+        float: left;
+        width: 100%;
+        @media only screen and (min-width: 1200px) {
+            width: 60%;
+        }
+        @media only screen and (max-width: 1199px) {
+            width: 70%;
+        }
+    }
+    &__right{
+        float: left;
+        width: 40%;
+        text-align: right;
+        @media only screen and (max-width: 1599px) {
+
+        }
+        @media only screen and (max-width: 1199px) {
+            width: 30%;
+            float: right;
+        }
+        @media only screen and (max-width: 991px) {
+            width: 100%;
+        }
+        .gform_wrapper {
+            display: table;
+            margin: 0 0 0 auto;
+            width: 100% !important;
+            @media only screen and (max-width: 991px) {
+                margin-top: -10px;
+            }
+            .gform_body{
+                @media only screen and (max-width: 991px) {
+                    float: left;
+                    width: 70%;
+                }
+            }
+            form{
+                width: 100% !important;
+                min-width: 554px;
+                @media only screen and (max-width: 1599px) {
+                    min-width: 0;
+                    width: 400px !important;
+                    float: right;
+                }
+                @media only screen and (max-width: 1299px) {
+                    width: 320px !important;
+                }
+                @media only screen and (max-width: 1199px) {
+                    width: 280px !important;
+                }
+                @media only screen and (max-width: 991px) {
+                    width: 100% !important;
+                    min-width: 0;
+                }
+                label{
+                    display: none !important;
+                }
+                input[type=text]{
+                    width: 100%;
+                    background: rgba(255, 255, 255, 0.1);
+                    border:none;
+                    height: 58px;
+                    line-height: 58px;
+                    margin: 0 !important;
+                    color: #fff;
+                    box-sizing: 0;
+                    padding: 0 16px !important;
+                    outline: none;
+                    @media only screen and (max-width: 991px) {
+                        height: 27px;
+                        line-height: 27px;
+                    }
+                }
+                .gform_footer{
+                    display: inline-block;
+                    margin: 5px 0 0 0;
+                    @media only screen and (max-width: 991px) {
+                        float: left;
+                        display: block;
+                        width: 30%;
+                        clear: none;
+                    }
+                }
+                input[type=submit]{
+                    width: 120px;
+                    border:none;
+                    height: 38px;
+                    line-height: 38px;
+                    padding:0;
+                    text-align: center;
+                    border-radius: 20px;
+                    font-size: 15px;
+                    color: #fff;
+                    background: rgba(255, 255, 255, 0.3);
+                    cursor: pointer;
+                    float: right;
+                    margin: 0;
+                    text-transform: uppercase;
+                    @media only screen and (max-width: 991px) {
+                        font-size: 10px;
+                        width: 80px;
+                        height: 27px;
+                        line-height: 27px;
+                        position: relative;
+                        top: -4px;
+                        float: left;
+                        margin-left: 10px;
+                    }
+                    &:hover{
+                        background: rgba(255, 255, 255, 0.5);
+                    }
+                }
+                li.gfield{
+                    margin-top: 17px !important;
+                }
+                .ginput_container_text{
+                    margin-top: 0 !important;
+                }
+            }
+        }
+    }
+    &__tit{
+        color: #6F7EF4;
+        font-size: 18px;
+        font-family: 'Avenir-Black';
+        text-transform: uppercase;
+        @media only screen and (max-width: 991px) {
+            font-size: 12px;
+            text-align: left;
+            margin:  20px 0 0 0;
+        }
+    }
+    &__menu{
+        display: block;
+        list-style-type: none;
+        padding-left: 110px;
+        float: left;
+        @media only screen and (max-width: 1599px) {
+            padding-left: 60px;
+        }
+        @media only screen and (max-width: 991px) {
+            padding-left: 0;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        &__01{
+            @media only screen and (min-width: 992px) {
+                padding-left: 45px;
+            }
+        }
+        &__tit{
+            color: #6F7EF4 !important;
+            cursor: none !important;
+            opacity: none !important;
+        }
+        li{
+            a{
+                color: #fff;
+                font-size: 14px;
+                line-height: 30px;
+                letter-spacing: 0.9px;
+                font-family: 'Avenir-Black';
+                cursor: pointer;
+                text-decoration: none;
+                text-transform: uppercase;
+                @media only screen and (max-width: 1299px) {
+                    font-size: 12px;
+                }
+                @media only screen and (max-width: 991px) {
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+        }
+        
+    }
+    &__bottom{
+        float: left;
+        width: 100%;
+        display: block;
+        color: #fff;
+        text-align: right;
+        margin: 100px 0 0 0;
+        @media only screen and (max-width: 991px) {
+            margin: 0 0 0 0;
+            text-align: left;
+        }
+        &__line01{
+            font-size: 18px;
+            font-family: 'Avenir-Black';
+            letter-spacing: 1.3px;
+            @media only screen and (max-width: 991px) {
+                font-size: 10px;
+            }
+            span{
+                font-size: 18px;
+                color: #6F7EF4;
+                font-family: 'Avenir-Black';
+                @media only screen and (max-width: 991px) {
+                    font-size: 10px;
+                    margin: 0;
+                }
+            }
+        }
+        &__line02{
+            font-size: 18px;
+            font-family: 'Avenir-Black';
+            letter-spacing: 0.9px;
+            @media only screen and (max-width: 991px) {
+                font-size: 10px;
+                margin: 0;
+            }
+        }
+    }
+    .gform_wrapper ul.gform_fields li.gfield{
+        padding: 0 !important;
+    }
+    &:after{
+        content: '';
+        display: block;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #9F2A24;
+        height: 24px;
+    }
+}
