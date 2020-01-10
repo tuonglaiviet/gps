@@ -1,0 +1,482 @@
+$color_main: #9F2A24;
+li{
+  list-style: none;
+}
+.top__banner.top__banner__contact__addcss{
+  background: url(../../images/Patient-Information-hero-image.png);
+  border-bottom: 10px solid #20285C;
+  .top__banner__tit{
+    top: 0;
+    bottom: inherit;
+    width: 32.5%;
+    @media only screen and (max-width: 1440px) and (min-width: 1200px){
+      top: 0;
+    }
+    @media only screen and (max-width: 1199px) and (min-width: 992px){
+      top:10%;
+    }
+    @media only screen and (max-width: 991px){
+      display: none;
+    }
+  }
+  .top__banner__tab03{
+    background-image: url(../../images/ic-insurance.png);
+  }
+  .top__banner__tab04{
+    background-image: url(../../images/top-icon-03.png);
+  }
+}
+.contact__intro{
+  padding: 170px 0 160px 0;
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
+  @media only screen and (max-width: 1440px) and (min-width: 768px) {
+    padding: 100px 40px;
+  }
+  @media only screen and (max-width: 767px){
+    padding: 70px 0px;
+  }
+  .tit{
+    color: $color_main;
+    font-size: 90px;
+    line-height: 96px;
+    letter-spacing: .2px;
+    font-family: 'BigCaslon-Medium';
+    text-align: center;
+    margin-bottom: 30px;
+    @media only screen and (max-width: 1440px) and (min-width: 768px){
+      font-size: 65px;
+      line-height: 70px;
+    }
+    @media only screen and (max-width: 767px){
+      font-size: 30px;
+      line-height: 36px;
+      letter-spacing: 0.2px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+
+  }
+  .txt{
+    font-size: 46px;
+    font-family: 'BigCaslon-Medium';
+    line-height: 54px;
+    color: #5D5D5D;
+    letter-spacing: .9px;
+    width: 100%;
+    max-width: 889px;
+    margin: 0 auto;
+    p{
+      font-size: 46px;
+      font-family: 'BigCaslon-Medium';
+      line-height: 54px;
+      color: #5D5D5D;
+      letter-spacing: .9px;
+      @media only screen and (max-width: 1440px) and (min-width: 768px){
+        font-size: 36px;
+        line-height: 46px;
+      }
+      @media only screen and (max-width: 767px){
+        font-size: 18px;
+        line-height: 24px;
+        padding: 0 13%;
+      }
+    }
+
+  }
+}
+.contact__block_bg{
+  img{
+    max-height: 1100px;
+    @media only screen and (max-width: 767px){
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+
+  }
+}
+.contact__form{
+  background: #F2F2F2;
+  .contact__form__cover{
+    max-width: 1515px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 70px 0;
+    .text{
+      .tit{
+        color: $color_main;
+        text-transform: uppercase;
+        font-size: 60px;
+        padding-bottom: 12px;
+        letter-spacing: .2px;
+        @media only screen and (max-width: 992px) and (min-width: 768px){
+          font-size: 46px;
+        }
+        @media only screen and (max-width: 767px){
+          font-size: 30px;
+          line-height: 36px;
+        }
+      }
+      .note{
+        .txt{
+          font-family: 'Avenir-Black';
+          color: #5D5D5D;
+          text-transform: uppercase;
+          padding-right: 10px;
+          padding-left: 10px;
+          font-size: 22px;
+          @media only screen and (max-width: 767px){
+            display: block;
+            font-size: 10px;
+          }
+          .link{
+            padding-left: 5px;
+            transition: 0.5s all ease-in-out;
+            color: #5D5D5D;
+            font-family: 'Avenir-Heavy';
+            font-size: 22px;
+            @media only screen and (max-width: 767px){
+              font-size: 10px;
+            }
+            &:hover{
+              text-decoration: none;
+              color: $color_main;
+            }
+          }
+          .redu{
+            font-size: 22px;
+            padding-left: 20px;
+
+            @media only screen and (max-width: 767px){
+              display: none;
+            }
+
+          }
+        }
+      }
+    }
+    .request__form{
+      .validation_message{
+        color: $color_main;
+        text-align: left;
+        padding-top: 10px;
+      }
+      .validation_error{
+        color: $color_main;
+        padding-bottom: 16px;
+      }
+      padding-top: 100px;
+      @media only screen and (max-width: 1440px) and (min-width: 768px){
+        padding-top: 70px;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+      @media only screen and (max-width: 767px){
+        padding-top: 45px;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+      .gform_body{
+        >ul{
+          padding-left: 0;
+          @media only screen and (max-width: 767px){
+             margin-bottom: 0;
+          }
+        }
+      }
+      li{
+        list-style: none;
+        @media only screen and (max-width: 767px){
+          padding-bottom: 25px;
+        }
+      }
+      input{
+        color: #5D5D5D;
+        border: 1px solid #707070;
+        height: 100px;
+        padding-left: 25px;
+        font-size: 24px;
+        font-family: 'Avenir-Medium' !important;
+        outline: none;
+        @media only screen and (max-width: 1440px) and (min-width: 768px){
+          height: 70px;
+        }
+        @media only screen and (max-width: 767px){
+          font-size: 20px;
+          height: 55px;
+        }
+      }
+      textarea{
+        color: #5D5D5D;
+        outline: none;
+        border: 1px solid #707070;
+        padding-left: 25px !important;
+        font-size: 24px !important;
+        font-family: 'Avenir-Medium' !important;
+        height: 260px;
+        width: 100%;
+        @media only screen and (max-width: 767px){
+          font-size: 20px;
+          padding-top: 20px;
+        }
+      }
+      input::placeholder{
+        text-transform: uppercase;
+        font-size: 30px;
+        letter-spacing: .2px;
+        color: #5D5D5D;
+        font-family: 'Avenir-Medium';
+        @media only screen and (max-width: 1440px) and (min-width: 768px){
+          font-size: 24px;
+        }
+        @media only screen and (max-width: 767px){
+          font-size: 20px;
+        }
+      }
+      textarea::placeholder {
+        display: flex;
+        align-content: center;
+        text-transform: uppercase;
+        font-size: 30px;
+        letter-spacing: .2px;
+        color: #5D5D5D;
+        font-family: 'Avenir-Medium';
+        padding-top: 6%;
+        @media only screen and (max-width: 1440px) and (min-width: 768px){
+          font-size: 24px;
+        }
+        @media only screen and (max-width: 767px){
+          font-size: 20px;
+          padding-top: 0;
+        }
+      }
+      label{
+        display: none;
+      }
+      .gfmc-row-1-col-1-of-1{
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex;     /* NEW - Chrome */
+        display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        padding-bottom: 20px;
+        @media only screen and (max-width: 767px){
+          display: inherit;
+          padding-bottom: 0;
+        }
+        >ul{
+          width: 100%;
+
+          >li{
+            width: 33.3%;
+            display: inline-block;
+            @media only screen and (max-width: 767px){
+              width: 100%;
+            }
+          }
+          li:first-of-type{
+            padding-right: 30px;
+            @media only screen and (max-width: 767px){
+              padding-right: 0;
+            }
+
+          }
+          li:nth-child(2){
+            padding-right: 30px;
+            @media only screen and (max-width: 767px){
+              padding-right: 0;
+            }
+          }
+        }
+      }
+      .gform_footer{
+        width: 100%;
+        text-align: center;
+        @media only screen and (max-width: 767px){
+          text-align: left;
+        }
+        input{
+          background: transparent;
+          border: 3px solid $color_main;
+          border-radius: 50px;
+          padding: 6px 45.5px;
+          text-transform: uppercase;
+          letter-spacing: 1.3px;
+          font-size: 25px;
+          font-family: 'Avenir-Heavy';
+          color: $color_main;
+          height: 70px;
+          margin-top: 30px;
+          cursor: pointer;
+          transition: 0.5s all ease-in-out;
+          &:hover{
+            background: $color_main;
+            color: #fff;
+          }
+          @media only screen and (max-width: 767px){
+            height: 45px;
+            width: 116px;
+            font-size: 15px;
+            padding: 0;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .request__cover{
+    background: #F5F5F5;
+  }
+}
+.contact__download{
+  max-width: 1520px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 0;
+  @media only screen and (max-width: 1440px) and (min-width: 768px){
+    padding: 100px 40px;
+  }
+  @media only screen and (max-width: 767px){
+    padding: 60px 40px;
+  }
+  .tit{
+    color: $color_main;
+    font-size: 30px;
+    letter-spacing: .2px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    @media only screen and (max-width: 767px){
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  .txt{
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 1.3px;
+    color: #5D5D5D;
+    max-width: 1100px;
+    @media only screen and (max-width: 767px){
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+  .btn__download__cover{
+    padding-top: 50px;
+    @media only screen and (max-width: 767px){
+      padding-top: 30px;
+      text-align: center;
+    }
+    .btn__download{
+      color: $color_main;
+      text-transform: uppercase;
+      font-size: 25px;
+      letter-spacing: 1.3px;
+      padding: 16px 65px;
+      border-radius: 50px;
+      border: 3px solid $color_main;
+      @media only screen and (max-width: 767px){
+        font-size: 13px;
+        padding: 9.5px 11.5px;
+      }
+      @media only screen and (max-width: 374px){
+        font-size: 10px;
+        padding: 9.5px 9.5px;
+      }
+
+      &:hover{
+        text-decoration: none;
+        opacity: .7;
+      }
+    }
+  }
+}
+.contact__insurance__block{
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  align-items: center;
+  align-content: center;
+  @media only screen and (max-width: 767px){
+    display: inherit;
+  }
+  background: #F2F2F2;
+  .left{
+    background: #F2F2F2;
+    width: 50%;
+    @media only screen and (max-width: 767px){
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
+    .cover{
+      padding-left: 20%;
+      padding-right: 2.7%;
+      @media only screen and (max-width: 767px){
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+      .tit{
+        color: $color_main;
+        font-size: 54px;
+        letter-spacing: .2px;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+        font-family: 'BigCaslon-Medium';
+        @media only screen and (max-width: 1440px) and (min-width: 768px){
+          font-size: 46px;
+        }
+        @media only screen and (max-width: 767px){
+          font-size: 30px;
+          letter-spacing: .2px;
+          line-height: 36px;
+          text-align: center;
+        }
+      }
+      .text{
+        font-size: 22px;
+        line-height: 32px;
+        letter-spacing: 1px;
+        color: #5D5D5D;
+        margin-bottom: 30px;
+        @media only screen and (max-width: 767px){
+          font-size: 13px;
+          line-height: 20px;
+          letter-spacing: .6px;
+        }
+      }
+      .mb-text-red{
+        @media only screen and (max-width: 767px){
+          color: $color_main;
+          text-transform: uppercase;
+          font-size: 10px;
+          line-height: 25px;
+          letter-spacing: 2.4px;
+        font-family: 'Avenir-Black';
+        }
+      }
+    }
+  }
+  .right{
+    width: 50%;
+    @media only screen and (max-width: 767px){
+      width: 100%;
+    }
+    img{
+      width: 100%;
+      height: 982px;
+      object-fit: cover;
+      @media only screen and (max-width: 767px){
+        height: 340px;
+        object-fit: cover;
+      }
+    }
+  }
+}
