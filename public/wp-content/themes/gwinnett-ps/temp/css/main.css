@@ -238,6 +238,8 @@ Media Query Mixins
   border-bottom: 1px solid #bcbcbc;
   width: 100%;
   box-sizing: border-box; }
+  .header__container {
+    padding: 0 16px; }
   @media only screen and (max-width: 1249px) {
     .header {
       position: fixed;

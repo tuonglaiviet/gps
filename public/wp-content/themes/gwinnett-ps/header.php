@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 <header class="header">
-	<div class="tcontainer">
+	<div class="header__container">
 		<a href="<?php bloginfo('home') ?>" title="<?php bloginfo('name') ?>" class="header__logo">
 			<img src="<?php bloginfo('template_directory') ?>/images/Group 278.png" title="<?php bloginfo('name') ?>" alt="<?php bloginfo('name') ?>"/>
 		</a>
