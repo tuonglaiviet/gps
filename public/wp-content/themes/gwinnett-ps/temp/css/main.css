@@ -238,7 +238,7 @@ Media Query Mixins
   border-bottom: 1px solid #bcbcbc;
   width: 100%;
   box-sizing: border-box; }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 1249px) {
     .header {
       position: fixed;
       z-index: 999;
@@ -255,7 +255,7 @@ Media Query Mixins
     left: 0;
     top: 0;
     position: absolute; }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 1249px) {
       .header:before {
         height: 9px; } }
   .header__search {
@@ -279,13 +279,13 @@ Media Query Mixins
     display: inline-block;
     box-sizing: border-box;
     padding-left: 60px; }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 1249px) {
       .header__logo {
         padding: 18px 0 10px 12px; } }
     .header__logo img {
       height: auto;
       width: 150px; }
-      @media only screen and (max-width: 767px) {
+      @media only screen and (max-width: 1249px) {
         .header__logo img {
           width: 30px; } }
   .header__menu {
@@ -301,7 +301,7 @@ Media Query Mixins
     @media only screen and (max-width: 1919px) {
       .header__menu {
         width: calc(100% - 270px); } }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 1249px) {
       .header__menu {
         position: fixed;
         top: 61px;
@@ -320,7 +320,7 @@ Media Query Mixins
       list-style-type: none;
       padding: 0;
       margin: 0; }
-      @media only screen and (max-width: 767px) {
+      @media only screen and (max-width: 1249px) {
         .header__menu ul {
           display: block;
           margin: 0; } }
@@ -331,7 +331,7 @@ Media Query Mixins
         @media only screen and (max-width: 1560px) {
           .header__menu ul li {
             padding: 0 10px; } }
-        @media only screen and (max-width: 767px) {
+        @media only screen and (max-width: 1249px) {
           .header__menu ul li {
             width: 100%;
             display: block;
@@ -344,7 +344,7 @@ Media Query Mixins
           @media only screen and (max-width: 1440px) {
             .header__menu ul li a {
               font-size: 12px; } }
-          @media only screen and (max-width: 767px) {
+          @media only screen and (max-width: 1249px) {
             .header__menu ul li a {
               padding: 10px 30px;
               display: block;
@@ -358,7 +358,7 @@ Media Query Mixins
     @media only screen and (max-width: 1919px) {
       .header__intro {
         right: 100px; } }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 1249px) {
       .header__intro {
         display: none; } }
     .header__intro ul li {
@@ -378,10 +378,10 @@ Media Query Mixins
     @media only screen and (max-width: 1440px) {
       .header__contact {
         padding-left: 30px !important; } }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 1249px) {
       .header__contact {
         padding-left: 0 !important; } }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1250px) {
       .header__contact a {
         background: #9F2A24;
         color: #fff !important;
@@ -393,7 +393,7 @@ Media Query Mixins
         width: 120px; } }
   .header__menubuton {
     display: none; }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 1249px) {
       .header__menubuton {
         display: block;
         width: 25px;

@@ -3,7 +3,7 @@
     border-bottom: 1px solid #bcbcbc;
     width: 100%;
     box-sizing: border-box;
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 1249px) {
         position: fixed;
         z-index: 999;
         top: 0;
@@ -20,7 +20,7 @@
         left: 0;
         top: 0;
         position: absolute;
-        @media only screen and (max-width: 767px) {
+        @media only screen and (max-width: 1249px) {
             height: 9px;
         }
     }
@@ -48,13 +48,13 @@
         display: inline-block;
         box-sizing: border-box;
         padding-left: 60px;
-        @media only screen and (max-width: 767px) {
+        @media only screen and (max-width: 1249px) {
             padding: 18px 0 10px 12px;
         }
         img{
             height: auto;
             width: 150px;
-            @media only screen and (max-width: 767px) {
+            @media only screen and (max-width: 1249px) {
                 width: 30px;
             }
         }
@@ -74,7 +74,7 @@
         @media only screen and (max-width: 1919px) {
             width: calc(100% - 270px);
         }
-        @media only screen and (max-width: 767px) {
+        @media only screen and (max-width: 1249px) {
             position: fixed;
             top: 61px;
             background: #fff;
@@ -94,7 +94,7 @@
             list-style-type: none;
             padding: 0;
             margin: 0;
-            @media only screen and (max-width: 767px) {
+            @media only screen and (max-width: 1249px) {
                 display: block;
                 margin: 0;
             }
@@ -105,7 +105,7 @@
                 @media only screen and (max-width: 1560px) {
                     padding: 0 10px;
                 }
-                @media only screen and (max-width: 767px) {
+                @media only screen and (max-width: 1249px) {
                     width: 100%;
                     display: block;
                     padding: 0;
@@ -118,7 +118,7 @@
                     @media only screen and (max-width: 1440px) {
                         font-size: 12px;
                     }
-                    @media only screen and (max-width: 767px) {
+                    @media only screen and (max-width: 1249px) {
                         padding: 10px 30px;
                         display: block;
                         border-top: 1px solid #bcbcbc;
@@ -136,7 +136,7 @@
         @media only screen and (max-width: 1919px) {
             right: 100px;
         }
-        @media only screen and (max-width: 767px) {
+        @media only screen and (max-width: 1249px) {
             display: none;
         }
         ul{
@@ -161,11 +161,11 @@
         @media only screen and (max-width: 1440px) {
             padding-left: 30px !important;
         }
-        @media only screen and (max-width: 767px) {
+        @media only screen and (max-width: 1249px) {
             padding-left: 0 !important;
         }
         a{
-            @media only screen and (min-width: 768px) {
+            @media only screen and (min-width: 1250px) {
                 background: #9F2A24;
                 color: #fff !important;
                 box-sizing: border-box;
@@ -179,7 +179,7 @@
     }
     &__menubuton{
         display: none;
-        @media only screen and (max-width: 767px) {
+        @media only screen and (max-width: 1249px) {
             display: block;
             width: 25px;
             height: 16px;
