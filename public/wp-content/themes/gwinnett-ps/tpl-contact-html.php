@@ -19,7 +19,7 @@
     </div>
 </section>
 
-<section  class="contact__form">
+<section  class="contact__form addstyle">
         <div class="contact__form__cover">
             <div class="text">
                 <h3 class="tit">Contact Us</h3>
