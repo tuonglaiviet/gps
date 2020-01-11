@@ -181,16 +181,20 @@ Media Query Mixins
   font-size: 25px;
   letter-spacing: 1.3px;
   line-height: 34px;
-  border-radius: 20px;
+  border-radius: 40px;
   color: #9F2A24;
   border: 3px solid #711516;
   text-transform: uppercase;
   text-align: center;
   padding: 17px 34.5px;
   text-decoration: none !important;
-  display: table; }
+  display: table;
+  min-width: 312px;
+  display: block;
+  box-sizing: border-box; }
   @media only screen and (max-width: 991px) {
     .gbutton, .gbuttonlight {
+      min-width: 187px;
       font-size: 15px;
       line-height: 21px;
       padding: 9px 29px; } }
@@ -1243,6 +1247,8 @@ Media Query Mixins
     .about__locations__info--des {
       margin: 60px 0 0 0;
       padding: 0 15%; }
+    .about__locations__info--buttons li {
+      display: inline-block; }
   .about__locations__mapround {
     position: relative; }
     .about__locations__mapround:before {

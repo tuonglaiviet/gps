@@ -26,7 +26,7 @@
         <div class="about__locations__info--des gp4">
             Enjoy amazing service at three convenient locations in Gwinnett County. Our practice is affiliated with the Gwinnett Medical Center’s Lawrenceville and Duluth campuses.
         </div>
-        <ul>
+        <ul class="about__locations__info--buttons">
             <li><a href="#" class="gbutton">LAWRENCEVILLE</a></li>
             <li><a href="#" class="gbutton">Duluth</a></li>
             <li><a href="#" class="gbutton">Hamilton Mill</a></li>

@@ -70,6 +70,11 @@
                 margin: 60px 0 0 0;
                 padding: 0 15%;
             }
+            &--buttons{
+                li{
+                    display: inline-block;
+                }
+            }
         }
         &__mapround{
             position: relative;
