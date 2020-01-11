@@ -1879,7 +1879,8 @@ li {
       height: 600px; } }
   @media only screen and (max-width: 767px) {
     .top__banner.top__banner__location__addcss {
-      height: 462px; } }
+      height: 524px;
+      background-size: cover; } }
   .top__banner.top__banner__location__addcss .top__banner__tit {
     top: 0;
     bottom: inherit;
@@ -2261,7 +2262,8 @@ li {
       height: 600px; } }
   @media only screen and (max-width: 767px) {
     .top__banner.top__banner__service__addcss {
-      height: 462px; } }
+      height: 524px;
+      background-size: cover; } }
   .top__banner.top__banner__service__addcss .top__banner__tit {
     top: 0;
     bottom: inherit;
@@ -2297,10 +2299,16 @@ li {
     .service__items {
       padding-right: 6%;
       padding-left: 6%; } }
-  @media only screen and (max-width: 991px) and (min-width: 767px) {
+  @media only screen and (max-width: 991px) and (min-width: 768px) {
     .service__items {
       padding-right: 3%;
       padding-left: 3%; } }
+  @media only screen and (max-width: 767px) {
+    .service__items {
+      display: inherit;
+      padding-right: 50px;
+      padding-left: 50px;
+      margin-top: -25px; } }
   .service__items .item {
     width: 30.66%;
     display: inline-block;
@@ -2308,9 +2316,13 @@ li {
     @media only screen and (max-width: 1919px) and (min-width: 768px) {
       .service__items .item {
         margin-bottom: 100px; } }
-    @media only screen and (max-width: 991px) and (min-width: 767px) {
+    @media only screen and (max-width: 991px) and (min-width: 768px) {
       .service__items .item {
         width: 32%; } }
+    @media only screen and (max-width: 767px) {
+      .service__items .item {
+        width: 100%;
+        margin-bottom: 45px; } }
     .service__items .item .image img {
       width: 100%;
       height: 100%;
@@ -2319,6 +2331,9 @@ li {
     .service__items .item .tit {
       padding-top: 20px;
       cursor: pointer; }
+      @media only screen and (max-width: 767px) {
+        .service__items .item .tit {
+          padding-top: 10px; } }
       .service__items .item .tit a {
         color: #9F2A24;
         position: relative;
@@ -2350,14 +2365,24 @@ li {
           opacity: .7; }
   .service__items .item:nth-child(3n+1) {
     margin-right: 4%; }
-    @media only screen and (max-width: 991px) and (min-width: 767px) {
+    @media only screen and (max-width: 991px) and (min-width: 768px) {
       .service__items .item:nth-child(3n+1) {
         margin-right: 2%; } }
+    @media only screen and (max-width: 767px) {
+      .service__items .item:nth-child(3n+1) {
+        margin-right: 0; } }
   .service__items .item:nth-child(3n+2) {
     margin-right: 4%; }
-    @media only screen and (max-width: 991px) and (min-width: 767px) {
+    @media only screen and (max-width: 991px) and (min-width: 768px) {
       .service__items .item:nth-child(3n+2) {
         margin-right: 2%; } }
+    @media only screen and (max-width: 767px) {
+      .service__items .item:nth-child(3n+2) {
+        margin-right: 0; } }
+
+@media only screen and (max-width: 767px) {
+  .service__conditions p {
+    margin-bottom: 8px; } }
 
 .service__conditions .text__line {
   color: #9F2A24;
@@ -2369,6 +2394,10 @@ li {
   position: relative;
   text-transform: uppercase;
   margin-bottom: 0; }
+  @media only screen and (max-width: 991px) {
+    .service__conditions .text__line {
+      font-size: 10px;
+      line-height: 18px; } }
   .service__conditions .text__line:before {
     content: "";
     position: absolute;
@@ -2376,6 +2405,9 @@ li {
     background: #9F2A24;
     width: 100%;
     height: 3px; }
+    @media only screen and (max-width: 767px) {
+      .service__conditions .text__line:before {
+        display: none; } }
 
 .service__expect {
   background: #9F2A24;
@@ -2395,13 +2427,23 @@ li {
     color: #fff;
     position: relative;
     display: inline-block; }
+    @media only screen and (max-width: 1440px) and (min-width: 768px) {
+      .service__expect .tit {
+        font-size: 56px;
+        line-height: 70px; } }
+    @media only screen and (max-width: 991px) {
+      .service__expect .tit {
+        font-size: 24px;
+        line-height: 25px; } }
     .service__expect .tit:before {
       content: "";
       position: absolute;
       bottom: -15px;
       background: #fff;
       width: 100%;
-      height: 1px; }
+      height: 1px;
+      left: 0;
+      right: 0; }
   .service__expect .list__items {
     max-width: 1440px;
     margin: 0 auto;
@@ -2415,16 +2457,43 @@ li {
     /* NEW, Spec - Opera 12.1, Firefox 20+ */
     flex-wrap: wrap;
     padding-top: 90px; }
+    @media only screen and (max-width: 767px) {
+      .service__expect .list__items {
+        padding-top: 70px; } }
     .service__expect .list__items .item {
       width: 25%;
       display: inline-block;
       text-align: center; }
+      @media only screen and (max-width: 991px) and (min-width: 768px) {
+        .service__expect .list__items .item {
+          width: 50%;
+          padding-bottom: 30px; } }
+      @media only screen and (max-width: 767px) {
+        .service__expect .list__items .item {
+          width: 100%;
+          display: -webkit-box;
+          display: flex;
+          flex-wrap: wrap;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: reverse;
+                  flex-direction: column-reverse;
+          padding-bottom: 10px; } }
       .service__expect .list__items .item .title {
         font-family: 'Avenir-Heavy';
         font-size: 30px;
         padding-bottom: 20px;
         letter-spacing: .2px;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        color: #fff; }
+        @media only screen and (max-width: 1440px) and (min-width: 992px) {
+          .service__expect .list__items .item .title {
+            font-size: 22px; } }
+        @media only screen and (max-width: 991px) {
+          .service__expect .list__items .item .title {
+            font-size: 14px;
+            padding-bottom: 0;
+            padding-top: 15px;
+            margin-bottom: 5px; } }
       .service__expect .list__items .item .image {
         border: 6px solid #fff;
         width: 225px;
@@ -2437,5 +2506,14 @@ li {
                 align-items: center;
         -webkit-box-pack: center;
                 justify-content: center; }
-        .service__expect .list__items .item .image img {
-          /*        width: 100%;*/ }
+        @media only screen and (max-width: 991px) {
+          .service__expect .list__items .item .image {
+            width: 120px;
+            height: 120px; }
+            .service__expect .list__items .item .image img {
+              width: 70%;
+              height: -webkit-fit-content;
+              height: -moz-fit-content;
+              height: fit-content;
+              -o-object-fit: contain;
+                 object-fit: contain; } }
