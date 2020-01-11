@@ -191,7 +191,7 @@ Media Query Mixins
   text-decoration: none !important;
   display: table;
   min-width: 312px;
-  display: block;
+  display: table;
   box-sizing: border-box; }
   @media only screen and (max-width: 991px) {
     .gbutton, .gbuttonlight {
@@ -1319,6 +1319,30 @@ Media Query Mixins
     letter-spacing: 1.3px;
     line-height: 21px;
     margin: 0 0 5px 0; }
+
+.about__boxes {
+  display: inline-block;
+  margin-bottom: -5px;
+  width: 100%; }
+  .about__boxes__line {
+    display: table;
+    width: 100%; }
+  .about__boxes__box {
+    width: 50%;
+    display: table-cell;
+    height: 700px;
+    box-sizing: border-box;
+    vertical-align: middle; }
+    .about__boxes__box.content {
+      padding: 12%; }
+    .about__boxes__box.thumb {
+      background: url(../../images/about-partner.png) no-repeat center;
+      background-size: cover; }
+    .about__boxes__box--des, .about__boxes__box .about__boxes__box--des p {
+      font-family: 'Avenir-Book';
+      font-size: 30px;
+      line-height: 43px;
+      letter-spacing: 0.98px; }
 
 li {
   list-style: none; }
