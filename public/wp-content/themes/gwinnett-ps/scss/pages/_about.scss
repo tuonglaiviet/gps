@@ -29,10 +29,13 @@
         background: url(../../images/about-video.png) no-repeat center;
         background-size: cover;
         position: relative;
-        &__play{
-            width: 160px;
-            height: 160px;
-            background: url(../../images/icon-play.png) no-repeat;
+        &__tit{
+            font-size: 90px;
+            letter-spacing: 2px;
+            color: #fff;
+            font-family: 'BigCaslon-Medium';
+        }
+        &__round{
             position: absolute;
             display: block;
             left: 50%;
@@ -42,6 +45,13 @@
             -moz-transform: translate(-50%,-50%);
             -o-transform: translate(-50%,-50%);
             -ms-transform: translate(-50%,-50%);
+        }
+        &__play{
+            display: block;
+            margin: 10px auto 0 auto;
+            width: 160px;
+            height: 160px;
+            background: url(../../images/icon-play.png) no-repeat;
             cursor: pointer;
             &:hover{
                 opacity: 0.5;
@@ -50,6 +60,7 @@
     }
     &__locations{
         position: relative;
+        border-bottom: 30px solid #20285C;
         &__info{
             display: block;
             width: 100%;
@@ -63,16 +74,23 @@
             top: -75px;
             text-align: center;
             transform: translate(-50%, 0);
-            &--tit{
-                
-            }
+            
             &--des{
                 margin: 60px 0 0 0;
                 padding: 0 15%;
             }
             &--buttons{
+                margin:70px 0 0 0;
+                padding: 0;
                 li{
                     display: inline-block;
+                    padding: 0 40px;
+                    &:first-child{
+                        padding-left: 0;
+                    }
+                    &:last-child{
+                        padding-right: 0;
+                    }
                 }
             }
         }
@@ -93,6 +111,53 @@
         &__map{
             width: 100%;
             height: 1100px;
+        }
+    }
+    &__story{
+        &__tit{
+            text-align: left;
+        }
+        &__des{
+            max-width: 70%;
+        }
+        &__des, .about__story__des p{
+            font-family: 'BigCaslon-Medium';
+            font-size: 31px;
+            letter-spacing: 0.9px;
+            line-height: 43px;
+            color: #5D5D5D;
+        }
+        &__boxes{
+            display: inline-block;
+            margin-bottom: -5px;  
+        }
+        &__box{
+            float: left;
+            width: 50%;
+            margin: 55px 0 0 0;
+            img{
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 50px;
+            }
+            &:nth-child(odd){
+                padding-right: 60px;
+            }
+            &:nth-child(even){
+                padding-left: 60px;
+            }
+            &--tit{
+                color: #9F2A24;
+            }
+            &--des{
+                font-size: 15px;
+                letter-spacing: 1.3px;
+                line-height: 21px;
+                margin: 0 0 5px 0;
+            }
+            &--button{
+                
+            }
         }
     }
 }

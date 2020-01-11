@@ -18,7 +18,10 @@
     </div>
 </section>
 <section class="about__video">
-    <span class="about__video__play"></span>
+    <div class="about__video__round">
+        <h2 class="about__video__tit">Our History</h2>
+        <span class="about__video__play"></span>
+    </div>
 </section>
 <section class="about__locations">
     <div class="about__locations__info">
@@ -34,6 +37,28 @@
     </div>
     <div class="about__locations__mapround">
         <div id="map" class="about__locations__map"></div>
+    </div>
+</section>
+<section class="about__story">
+    <div class="about__story__container">
+        <h3 class="big__tit about__story__tit">Our Success Stories</h3>
+        <div class="about__story__des">
+            <p>Gwinnett Pulmonary & Sleep is dedicated to excellence in pulmonary patient care, and is constantly seeking to advance information and technology in the field of pulmonary health.</p>
+        </div>
+        <div class="about__story__boxes">
+            <div class="about__story__box">
+                <img src="<?php bloginfo('template_directory'); ?>/images/about-success-01.png"/>
+                <h4 class="about__story__box--tit">Our Success Stories</h4>
+                <p class="about__story__box--des">Having survived one pulmonary embolism before moving from Florida to Georgia, I was fearful of not being able to find a new pulmonary group of physicians who offered equally comprehensive services and quality care. My fears were proved unfounded when the highly recommended Gwinnett Pulmonary Group came to my attention. </p>
+                <a href="#" class="gbutton2 about__story__box--button">Read more</a>
+            </div>
+            <div class="about__story__box">
+                <img src="<?php bloginfo('template_directory'); ?>/images/about-success-02.png"/>
+                <h4 class="about__story__box--tit">Our Success Stories</h4>
+                <p class="about__story__box--des">Having survived one pulmonary embolism before moving from Florida to Georgia, I was fearful of not being able to find a new pulmonary group of physicians who offered equally comprehensive services and quality care. My fears were proved unfounded when the highly recommended Gwinnett Pulmonary Group came to my attention. </p>
+                <a href="#" class="gbutton2 about__story__box--button">Read more</a>
+            </div>
+        </div>
     </div>
 </section>
 <script src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyBBHTA4GehSH_vtE6ildGWV8XBV7Z80YGc&language=en&region=EN" 
