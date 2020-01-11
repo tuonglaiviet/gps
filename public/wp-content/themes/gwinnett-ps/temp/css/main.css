@@ -1336,8 +1336,8 @@ li {
     padding: 30px 49px 30px 100px; }
     @media only screen and (max-width: 1440px) and (min-width: 1200px) {
       .top__banner.top__banner__contact__addcss .top__banner__tit {
-        top: 0; } }
-    @media only screen and (max-width: 1199px) and (min-width: 992px) {
+        top: 0%; } }
+    @media only screen and (max-width: 1199px) and (min-width: 768px) {
       .top__banner.top__banner__contact__addcss .top__banner__tit {
         top: 10%; } }
     @media only screen and (max-width: 991px) {
@@ -1889,7 +1889,10 @@ li {
     line-height: 70px;
     letter-spacing: 2px;
     padding: 30px 49px 30px 100px; }
-    @media only screen and (max-width: 1440px) and (min-width: 768px) {
+    @media only screen and (max-width: 1440px) and (min-width: 1200px) {
+      .top__banner.top__banner__location__addcss .top__banner__tit {
+        top: 0%; } }
+    @media only screen and (max-width: 1199px) and (min-width: 768px) {
       .top__banner.top__banner__location__addcss .top__banner__tit {
         top: 10%; } }
     @media only screen and (max-width: 991px) {
@@ -2272,7 +2275,10 @@ li {
     line-height: 70px;
     letter-spacing: 2px;
     padding: 30px 49px 30px 100px; }
-    @media only screen and (max-width: 1440px) and (min-width: 768px) {
+    @media only screen and (max-width: 1440px) and (min-width: 1200px) {
+      .top__banner.top__banner__service__addcss .top__banner__tit {
+        top: 0%; } }
+    @media only screen and (max-width: 1199px) and (min-width: 768px) {
       .top__banner.top__banner__service__addcss .top__banner__tit {
         top: 10%; } }
     @media only screen and (max-width: 991px) {
