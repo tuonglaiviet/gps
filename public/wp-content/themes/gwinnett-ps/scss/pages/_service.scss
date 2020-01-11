@@ -1,0 +1,212 @@
+$color_main: #9F2A24;
+.top__banner.top__banner__service__addcss{
+  height: 823px;
+  object-fit: cover;
+  background: url(../../images/service-hero-image.png);
+  border-bottom: 10px solid #20285C;
+  @media only screen and (max-width: 1440px) and (min-width: 768px){
+    height: 600px;
+  }
+  @media only screen and (max-width: 767px){
+    height: 462px;
+  }
+  .top__banner__tit{
+    top: 0;
+    bottom: inherit;
+    width: unset;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 2px;
+    padding: 30px 49px 30px 100px;
+    @media only screen and (max-width: 1440px) and (min-width: 768px){
+      top:10%;
+    }
+    @media only screen and (max-width: 991px){
+      display: none;
+    }
+  }
+}
+.contact__intro.service__addstyle{
+  .txt{
+   max-width: 1070px;
+  }
+}
+
+.service__items{
+  max-width: 1656px;
+  margin: 0 auto;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  @media only screen and (max-width: 1919px) and (min-width: 992px){
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+  @media only screen and (max-width: 991px) and (min-width: 767px){
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+  .item{
+    width: 30.66%;
+    display: inline-block;
+    margin-bottom: 170px;
+    @media only screen and (max-width: 1919px) and (min-width: 768px){
+      margin-bottom: 100px;
+    }
+    @media only screen and (max-width: 991px) and (min-width: 767px){
+      width: 32%;
+    }
+    .image{
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .tit{
+      padding-top: 20px;
+      cursor: pointer;
+      a{
+        color: $color_main;
+        position: relative;
+        font-family: 'Avenir-Black';
+        font-size: 20px;
+        letter-spacing: 2.4px;
+        line-height: 27px;
+        display: inline-block;
+        text-transform: uppercase;
+        @media only screen and (max-width: 1680px) and (min-width: 1551px){
+          font-size: 18px;
+        }
+        @media only screen and (max-width: 1550px) and (min-width: 992px){
+          font-size: 15px;
+        }
+        @media only screen and (max-width: 991px){
+          font-size: 10px;
+          line-height: 18px;
+        }
+        &:before{
+          content: "";
+          position: absolute;
+          bottom: -1px;
+          background: $color_main;
+          width: 100%;
+          height: 3px;
+
+        }
+        &:hover{
+            text-decoration: none;
+          opacity: .7;
+        }
+      }
+    }
+  }
+  .item:nth-child(3n+1){
+    margin-right: 4%;
+    @media only screen and (max-width: 991px) and (min-width: 767px){
+      margin-right: 2%;
+    }
+  }
+  .item:nth-child(3n+2){
+    margin-right: 4%;
+    @media only screen and (max-width: 991px) and (min-width: 767px){
+      margin-right: 2%;
+    }
+  }
+}
+
+.service__conditions{
+  .text__line{
+    color: $color_main;
+    font-family: 'Avenir-Black';
+    font-size: 20px;
+    letter-spacing: 2.4px;
+    line-height: 32px;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    &:before{
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      background: $color_main;
+      width: 100%;
+      height: 3px;
+
+    }
+  }
+}
+
+.service__expect{
+ background: $color_main;
+  color: #fff;
+  padding: 110px 0;
+  text-align: center;
+  @media only screen and (max-width: 767px){
+    padding: 60px 20px;
+  }
+  .tit{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Avenir-Book';
+    font-size: 70px;
+    line-height: 126px;
+    letter-spacing: .8px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    &:before{
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      background: #fff;
+      width: 100%;
+      height: 1px;
+
+    }
+
+  }
+  .list__items{
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    flex-wrap: wrap;
+    padding-top: 90px;
+    .item{
+      width: 25%;
+      display: inline-block;
+      text-align: center;
+      .title{
+        font-family: 'Avenir-Heavy';
+        font-size: 30px;
+        padding-bottom: 20px;
+        letter-spacing: .2px;
+        text-transform: uppercase;
+      }
+      .image{
+        border: 6px solid #fff;
+        width: 225px;
+        height: 225px;
+        border-radius: 50%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+ /*        width: 100%;*/
+        }
+      }
+    }
+  }
+}
+
