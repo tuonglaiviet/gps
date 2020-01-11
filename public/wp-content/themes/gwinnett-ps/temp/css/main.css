@@ -125,7 +125,8 @@ Media Query Mixins
   font-weight: normal;
   font-size: 14px;
   -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out; }
+  transition: all 0.3s ease-out;
+  color: #5D5D5D; }
 
 .hidden-xs {
   display: block !important; }
@@ -1211,10 +1212,12 @@ Media Query Mixins
   background: url(../../images/about-video.png) no-repeat center;
   background-size: cover;
   position: relative; }
-  .about__video__play {
-    width: 160px;
-    height: 160px;
-    background: url(../../images/icon-play.png) no-repeat;
+  .about__video__tit {
+    font-size: 90px;
+    letter-spacing: 2px;
+    color: #fff;
+    font-family: 'BigCaslon-Medium'; }
+  .about__video__round {
     position: absolute;
     display: block;
     left: 50%;
@@ -1223,13 +1226,20 @@ Media Query Mixins
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); }
+  .about__video__play {
+    display: block;
+    margin: 10px auto 0 auto;
+    width: 160px;
+    height: 160px;
+    background: url(../../images/icon-play.png) no-repeat;
     cursor: pointer; }
     .about__video__play:hover {
       opacity: 0.5; }
 
 .about__locations {
-  position: relative; }
+  position: relative;
+  border-bottom: 30px solid #20285C; }
   .about__locations__info {
     display: block;
     width: 100%;
@@ -1247,8 +1257,16 @@ Media Query Mixins
     .about__locations__info--des {
       margin: 60px 0 0 0;
       padding: 0 15%; }
-    .about__locations__info--buttons li {
-      display: inline-block; }
+    .about__locations__info--buttons {
+      margin: 70px 0 0 0;
+      padding: 0; }
+      .about__locations__info--buttons li {
+        display: inline-block;
+        padding: 0 40px; }
+        .about__locations__info--buttons li:first-child {
+          padding-left: 0; }
+        .about__locations__info--buttons li:last-child {
+          padding-right: 0; }
   .about__locations__mapround {
     position: relative; }
     .about__locations__mapround:before {
@@ -1264,6 +1282,43 @@ Media Query Mixins
   .about__locations__map {
     width: 100%;
     height: 1100px; }
+
+.about__story__tit {
+  text-align: left; }
+
+.about__story__des {
+  max-width: 70%; }
+
+.about__story__des, .about__story .about__story__des p {
+  font-family: 'BigCaslon-Medium';
+  font-size: 31px;
+  letter-spacing: 0.9px;
+  line-height: 43px;
+  color: #5D5D5D; }
+
+.about__story__boxes {
+  display: inline-block;
+  margin-bottom: -5px; }
+
+.about__story__box {
+  float: left;
+  width: 50%;
+  margin: 55px 0 0 0; }
+  .about__story__box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 50px; }
+  .about__story__box:nth-child(odd) {
+    padding-right: 60px; }
+  .about__story__box:nth-child(even) {
+    padding-left: 60px; }
+  .about__story__box--tit {
+    color: #9F2A24; }
+  .about__story__box--des {
+    font-size: 15px;
+    letter-spacing: 1.3px;
+    line-height: 21px;
+    margin: 0 0 5px 0; }
 
 li {
   list-style: none; }
