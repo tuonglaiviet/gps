@@ -20,7 +20,7 @@
 <section class="about__video">
     <div class="about__video__round">
         <h2 class="about__video__tit">Our History</h2>
-        <span class="about__video__play"></span>
+        <span class="about__video__play" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"></span>
     </div>
 </section>
 <section class="about__locations">
@@ -39,24 +39,24 @@
         <div id="map" class="about__locations__map"></div>
     </div>
 </section>
-<section class="about__story">
-    <div class="about__story__container">
-        <h3 class="big__tit about__story__tit">Our Success Stories</h3>
-        <div class="about__story__des">
+<section class="about__stories">
+    <div class="about__stories__container">
+        <h3 class="big__tit about__stories__tit">Our Success Stories</h3>
+        <div class="about__stories__des">
             <p>Gwinnett Pulmonary & Sleep is dedicated to excellence in pulmonary patient care, and is constantly seeking to advance information and technology in the field of pulmonary health.</p>
         </div>
-        <div class="about__story__boxes">
-            <div class="about__story__box">
+        <div class="about__stories__boxes">
+            <div class="about__stories__box">
                 <img src="<?php bloginfo('template_directory'); ?>/images/about-success-01.png"/>
-                <h4 class="about__story__box--tit">Our Success Stories</h4>
-                <p class="about__story__box--des">Having survived one pulmonary embolism before moving from Florida to Georgia, I was fearful of not being able to find a new pulmonary group of physicians who offered equally comprehensive services and quality care. My fears were proved unfounded when the highly recommended Gwinnett Pulmonary Group came to my attention. </p>
-                <a href="#" class="gbutton2 about__story__box--button">Read more</a>
+                <h4 class="about__stories__box--tit">Our Success Stories</h4>
+                <p class="about__stories__box--des">Having survived one pulmonary embolism before moving from Florida to Georgia, I was fearful of not being able to find a new pulmonary group of physicians who offered equally comprehensive services and quality care. My fears were proved unfounded when the highly recommended Gwinnett Pulmonary Group came to my attention. </p>
+                <a href="#" class="gbutton2 about__stories__box--button">Read more</a>
             </div>
-            <div class="about__story__box">
+            <div class="about__stories__box">
                 <img src="<?php bloginfo('template_directory'); ?>/images/about-success-02.png"/>
-                <h4 class="about__story__box--tit">Our Success Stories</h4>
-                <p class="about__story__box--des">Having survived one pulmonary embolism before moving from Florida to Georgia, I was fearful of not being able to find a new pulmonary group of physicians who offered equally comprehensive services and quality care. My fears were proved unfounded when the highly recommended Gwinnett Pulmonary Group came to my attention. </p>
-                <a href="#" class="gbutton2 about__story__box--button">Read more</a>
+                <h4 class="about__stories__box--tit">Our Success Stories</h4>
+                <p class="about__stories__box--des">Having survived one pulmonary embolism before moving from Florida to Georgia, I was fearful of not being able to find a new pulmonary group of physicians who offered equally comprehensive services and quality care. My fears were proved unfounded when the highly recommended Gwinnett Pulmonary Group came to my attention. </p>
+                <a href="#" class="gbutton2 about__stories__box--button">Read more</a>
             </div>
         </div>
     </div>

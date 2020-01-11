@@ -113,14 +113,24 @@
             height: 1100px;
         }
     }
-    &__story{
+    &__stories{
+        padding: 100px 0 80px 0;
+        background: #fff;
+        &__container{
+            width: 100%;
+            box-sizing: border-box;
+            max-width: 1510px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
         &__tit{
             text-align: left;
         }
         &__des{
             max-width: 70%;
+            margin: 25px 0 0 0;
         }
-        &__des, .about__story__des p{
+        &__des, .about__stories__des p{
             font-family: 'BigCaslon-Medium';
             font-size: 31px;
             letter-spacing: 0.9px;
@@ -151,12 +161,12 @@
             }
             &--des{
                 font-size: 15px;
-                letter-spacing: 1.3px;
+                letter-spacing: 1.5px;
                 line-height: 21px;
-                margin: 0 0 5px 0;
+                margin: 0 0 8px 0;
             }
             &--button{
-                
+                text-transform: uppercase;
             }
         }
     }
@@ -164,6 +174,7 @@
         display: inline-block;
         margin-bottom: -5px;
         width: 100%;
+        background: #F2F2F2;
         &__line{
             display: table;
             width: 100%;
@@ -182,6 +193,9 @@
                 background: url(../../images/about-partner.png) no-repeat center;
                 background-size: cover;
 
+            }
+            &--des{
+                margin: 25px 0 30px 0;
             }
             &--des, .about__boxes__box--des p{
                 font-family: 'Avenir-Book';

@@ -124,13 +124,16 @@ function gwinnett_ps_scripts() {
 	wp_enqueue_style('bootstrap4', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css');
     
 	wp_enqueue_style('gwinnett-ps-style', get_theme_file_uri('/temp/css/main.css'), NULL, microtime());
-
+	wp_enqueue_style('fancybox-style', get_theme_file_uri('/temp/css/jquery.fancybox.min.css'), NULL, microtime());
 	wp_enqueue_script( 'boot1','https://code.jquery.com/jquery-3.3.1.slim.min.js', array('jquery'));
 	wp_enqueue_script( 'boot2','https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', array('jquery'));
 	wp_enqueue_script( 'boot2','https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js', array('jquery'));
+	
 
 	wp_enqueue_script('match-height-js', get_theme_file_uri('/js/jquery.matchHeight.js'), NULL, microtime() , true);
 	wp_enqueue_script('gwinnett-ps-js', get_theme_file_uri('/js/scripts-bundled.js'), NULL, microtime() , true);
+	wp_enqueue_script('fancybox-js', get_theme_file_uri('/js/jquery.fancybox.min.js'), NULL, microtime() , true);
+	
 
 	wp_enqueue_script( 'gwinnett-ps-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
