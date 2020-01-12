@@ -25,7 +25,7 @@
 </section>
 <section class="about__locations oursuccess__locations">
     <div class="about__locations__info">
-        <h3 class="about__locations__info--tit big__tit">Our Locations</h3>
+        <h3 class="about__locations__info--tit big__tit">LEARN MORE <br class="visible-xs">ABOUT OUR LOCATION</h3>
         <div class="about__locations__info--des gp4">
             Enjoy amazing service at three convenient locations in Gwinnett County. Our practice is affiliated with the Gwinnett Medical Center’s Lawrenceville and Duluth campuses.
         </div>
