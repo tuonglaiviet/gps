@@ -1301,6 +1301,15 @@ Media Query Mixins
     .about__video {
       height: 275px;
       background-image: url(../../images/about-video-mb.png); } }
+  .about__video:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3); }
   .about__video__tit {
     font-size: 90px;
     letter-spacing: 2px;
@@ -1350,7 +1359,7 @@ Media Query Mixins
   .about__locations__info {
     display: block;
     width: 100%;
-    padding: 85px 16px;
+    padding: 85px 16px 65px 16px;
     box-sizing: border-box;
     max-width: 1240px;
     position: absolute;
@@ -1396,7 +1405,7 @@ Media Query Mixins
           width: 86%;
           margin: 15px auto 0 auto; } }
     .about__locations__info--buttons {
-      margin: 70px 0 0 0;
+      margin: 50px 0 0 0;
       padding: 0;
       width: 100%; }
       @media only screen and (max-width: 767px) {
@@ -1404,7 +1413,7 @@ Media Query Mixins
           margin: 10px 0 0 0; } }
       .about__locations__info--buttons li {
         display: inline-block;
-        padding: 0 40px; }
+        padding: 20px; }
         @media only screen and (max-width: 1440px) {
           .about__locations__info--buttons li {
             padding: 0 15px; } }
@@ -1419,10 +1428,6 @@ Media Query Mixins
           .about__locations__info--buttons li .gbutton {
             width: 187px;
             margin: 0 auto; } }
-        .about__locations__info--buttons li:first-child {
-          padding-left: 0; }
-        .about__locations__info--buttons li:last-child {
-          padding-right: 0; }
   .about__locations__mapround {
     position: relative; }
     .about__locations__mapround:before {
@@ -2744,3 +2749,53 @@ li {
               height: fit-content;
               -o-object-fit: contain;
                  object-fit: contain; } }
+
+.oursuccess__top {
+  border-bottom: 30px solid #20285C; }
+  .oursuccess__top__container {
+    box-sizing: border-box;
+    padding: 40px 16px 100px 16px;
+    max-width: 1416px;
+    margin: 0 auto; }
+  .oursuccess__top__tit {
+    text-align: center; }
+
+.oursuccess__test__button {
+  margin: 100px auto 0 auto; }
+
+.oursuccess__test__container {
+  width: 100%;
+  max-width: 1580px;
+  margin: 0 auto; }
+
+.oursuccess__test__around {
+  display: table;
+  width: 100%;
+  margin: 150px 0; }
+
+.oursuccess__test__thumb {
+  display: table-cell;
+  width: 50%;
+  background-image: url(../../images/oursuccess-thumb.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 555px; }
+
+.oursuccess__test__content {
+  display: table-cell;
+  width: 50%;
+  font-size: 15px;
+  letter-spacing: 1.3px;
+  line-height: 21px;
+  box-sizing: border-box;
+  padding: 3% 5% 3% 7.5%; }
+  .oursuccess__test__content--tit {
+    margin: 0 0 35px 0; }
+
+.oursuccess__locations {
+  border-bottom: 0; }
+  .oursuccess__locations .about__locations__info {
+    position: relative; }
+  .oursuccess__locations .gbutton {
+    display: block; }
