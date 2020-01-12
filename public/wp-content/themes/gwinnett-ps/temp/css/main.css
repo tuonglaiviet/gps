@@ -304,7 +304,9 @@ Media Query Mixins
   @media only screen and (max-width: 767px) {
     .gbanner {
       height: 462px;
-      background-size: cover;
+      background-size: cover; } }
+  @media only screen and (max-width: 991px) {
+    .gbanner {
       border-bottom: 10px solid #20285C; } }
   .gbanner .top__banner__tit {
     top: 0;
@@ -1267,6 +1269,10 @@ Media Query Mixins
       color: #fff;
       margin: 20px 0 0 0;
       display: block; }
+
+@media only screen and (min-width: 992px) {
+  .home .top__banner {
+    border-bottom: 30px solid #20285C; } }
 
 .about__banner {
   background-image: url(../../images/about-banner.png) !important; }
