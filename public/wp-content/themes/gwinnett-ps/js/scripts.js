@@ -32,3 +32,24 @@ jQuery(function () {
     }
 
 });
+
+
+/*start events*/
+    $(function() {
+        $(document).ready(function() {
+            $(".js_less").hide();
+            $(".js_more").click(function() {
+                $(this).hide();
+                $(this).parent().parent().addClass("active");
+                $(this).parent().find(".js_click_show").show();
+                $(this).parent().find(".js_less").slideToggle(350);
+            });
+            $(".js_click_show").click(function() {
+                $(this).hide();
+                $(this).parent().parent().parent().removeClass("active");
+                $(this).parent().parent().find(".js_less").slideToggle(350);
+                $(this).parent().toggleClass("scp-programs-active", 350);
+                $(this).parent().parent().find(".js_more").show();
+            });
+        });
+    });

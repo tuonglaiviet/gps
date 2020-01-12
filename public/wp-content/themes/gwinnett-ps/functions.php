@@ -125,7 +125,8 @@ function gwinnett_ps_scripts() {
     
 	wp_enqueue_style('gwinnett-ps-style', get_theme_file_uri('/temp/css/main.css'), NULL, microtime());
 	wp_enqueue_style('fancybox-style', get_theme_file_uri('/temp/css/jquery.fancybox.min.css'), NULL, microtime());
-	wp_enqueue_script( 'boot1','https://code.jquery.com/jquery-3.3.1.slim.min.js', array('jquery'));
+	/*wp_enqueue_script( 'boot1','https://code.jquery.com/jquery-3.3.1.slim.min.js', array('jquery'));*/
+	wp_enqueue_script( 'boot1','https://code.jquery.com/jquery-3.4.1.min.js', array('jquery'));
 	wp_enqueue_script( 'boot2','https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', array('jquery'));
 	wp_enqueue_script( 'boot2','https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js', array('jquery'));
 	
