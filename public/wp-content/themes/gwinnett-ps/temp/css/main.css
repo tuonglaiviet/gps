@@ -307,7 +307,7 @@ Media Query Mixins
     font-size: 60px;
     line-height: 70px;
     letter-spacing: 2px;
-    padding: 30px 49px 30px 100px; }
+    padding: 30px 49px 30px 75px; }
     @media only screen and (max-width: 1440px) and (min-width: 1200px) {
       .gbanner .top__banner__tit {
         top: 0%; } }
@@ -1560,7 +1560,7 @@ li {
     font-size: 60px;
     line-height: 70px;
     letter-spacing: 2px;
-    padding: 30px 49px 30px 100px; }
+    padding: 30px 49px 30px 75px; }
     @media only screen and (max-width: 991px) {
       .top__banner__patient__addcss .top__banner__tit {
         display: none; } }
