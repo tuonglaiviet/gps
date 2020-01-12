@@ -291,14 +291,15 @@ Media Query Mixins
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-bottom: 10px solid #20285C; }
+  border-bottom: 30px solid #20285C; }
   @media only screen and (max-width: 1440px) and (min-width: 768px) {
     .gbanner {
       height: 600px; } }
   @media only screen and (max-width: 767px) {
     .gbanner {
       height: 462px;
-      background-size: cover; } }
+      background-size: cover;
+      border-bottom: 10px solid #20285C; } }
   .gbanner .top__banner__tit {
     top: 0;
     bottom: inherit;
@@ -1250,7 +1251,7 @@ Media Query Mixins
 
 .about__story {
   padding: 80px 0 110px;
-  border-top: 30px solid #20285C;
+  /* border-top: 30px solid #20285C;*/
   border-bottom: 30px solid #20285C; }
   @media only screen and (max-width: 767px) {
     .about__story {

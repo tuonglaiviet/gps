@@ -158,13 +158,14 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-bottom: 10px solid #20285C;
+    border-bottom: 30px solid #20285C;
     @media only screen and (max-width: 1440px) and (min-width: 768px){
         height: 600px;
     }
     @media only screen and (max-width: 767px){
         height: 462px;
         background-size: cover;
+        border-bottom: 10px solid #20285C;
     }
   .top__banner__tit{
     top: 0;
