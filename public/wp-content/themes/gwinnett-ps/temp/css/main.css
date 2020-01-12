@@ -201,7 +201,7 @@ Media Query Mixins
       min-width: 187px;
       font-size: 15px;
       line-height: 21px;
-      padding: 9px 29px; } }
+      padding: 9px 16px; } }
   .gbutton:hover, .gbuttonlight:hover {
     color: #fff;
     background: #9F2A24; }
@@ -281,7 +281,13 @@ Media Query Mixins
   font-size: 31px;
   line-height: 40px;
   letter-spacing: 4px;
-  color: #5D5D5D; }
+  color: #5D5D5D;
+  font-family: 'Avenir-Heavy'; }
+  @media only screen and (max-width: 767px) {
+    .gp4, .gp4 p {
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: 0.8px; } }
 
 .gbanner {
   position: relative;
@@ -764,12 +770,14 @@ Media Query Mixins
     left: 0;
     width: 54.5%;
     box-sizing: border-box;
-    font-family: 'BigCaslon-Medium';
     font-size: 66px;
     padding: 30px 40px;
     display: block;
     letter-spacing: 9px;
     line-height: 79px; }
+    @media only screen and (min-width: 768px) {
+      .top__banner__tit {
+        font-family: 'BigCaslon-Medium'; } }
     @media only screen and (max-width: 1799px) {
       .top__banner__tit {
         font-size: 46px;
@@ -1255,7 +1263,8 @@ Media Query Mixins
   border-bottom: 30px solid #20285C; }
   @media only screen and (max-width: 767px) {
     .about__story {
-      padding: 20px 0 50px 0; } }
+      padding: 20px 0 50px 0;
+      border-width: 9px; } }
   .about__story__container {
     width: 100%;
     box-sizing: border-box;
@@ -1283,14 +1292,23 @@ Media Query Mixins
 .about__video {
   height: 743px;
   width: 100%;
-  background: url(../../images/about-video.png) no-repeat center;
+  background-image: url(../../images/about-video.png);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative; }
+  @media only screen and (max-width: 767px) {
+    .about__video {
+      height: 275px;
+      background-image: url(../../images/about-video-mb.png); } }
   .about__video__tit {
     font-size: 90px;
     letter-spacing: 2px;
     color: #fff;
     font-family: 'BigCaslon-Medium'; }
+    @media only screen and (max-width: 767px) {
+      .about__video__tit {
+        font-size: 30px; } }
   .about__video__round {
     position: absolute;
     display: block;
@@ -1307,13 +1325,28 @@ Media Query Mixins
     width: 160px;
     height: 160px;
     background: url(../../images/icon-play.png) no-repeat;
+    background-size: 100%;
     cursor: pointer; }
+    @media only screen and (max-width: 767px) {
+      .about__video__play {
+        width: 70px;
+        height: 70px; } }
     .about__video__play:hover {
       opacity: 0.5; }
 
 .about__locations {
   position: relative;
   border-bottom: 30px solid #20285C; }
+  @media only screen and (max-width: 767px) {
+    .about__locations {
+      border: none; }
+      .about__locations:after {
+        content: '';
+        width: 70%;
+        border-bottom: 1px solid #A8AEAF;
+        position: absolute;
+        display: block;
+        left: 15%; } }
   .about__locations__info {
     display: block;
     width: 100%;
@@ -1340,7 +1373,9 @@ Media Query Mixins
                 transform: none;
         left: 0;
         top: 0;
-        position: relative; } }
+        position: relative;
+        max-width: 100%;
+        padding: 40px 16px; } }
     .about__locations__info--des {
       margin: 60px 0 0 0;
       padding: 0 15%;
@@ -1348,26 +1383,42 @@ Media Query Mixins
       @media only screen and (max-width: 1440px) {
         .about__locations__info--des {
           padding: 0 6%; } }
-      @media only screen and (max-width: 1024px) {
+      @media only screen and (min-width: 992px) and (max-width: 1024px) {
         .about__locations__info--des {
           font-size: 24px;
           line-height: 33px; } }
-      @media only screen and (max-width: 991px) {
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
         .about__locations__info--des {
           font-size: 20px;
           line-height: 29px; } }
+      @media only screen and (max-width: 767px) {
+        .about__locations__info--des {
+          width: 86%;
+          margin: 15px auto 0 auto; } }
     .about__locations__info--buttons {
       margin: 70px 0 0 0;
-      padding: 0; }
+      padding: 0;
+      width: 100%; }
+      @media only screen and (max-width: 767px) {
+        .about__locations__info--buttons {
+          margin: 10px 0 0 0; } }
       .about__locations__info--buttons li {
         display: inline-block;
         padding: 0 40px; }
         @media only screen and (max-width: 1440px) {
           .about__locations__info--buttons li {
             padding: 0 15px; } }
+        @media only screen and (max-width: 767px) {
+          .about__locations__info--buttons li {
+            width: 100%;
+            padding: 20px 0 0 0; } }
         @media only screen and (max-width: 1440px) {
           .about__locations__info--buttons li .gbutton {
             min-width: 180px; } }
+        @media only screen and (max-width: 767px) {
+          .about__locations__info--buttons li .gbutton {
+            width: 187px;
+            margin: 0 auto; } }
         .about__locations__info--buttons li:first-child {
           padding-left: 0; }
         .about__locations__info--buttons li:last-child {
@@ -1394,6 +1445,9 @@ Media Query Mixins
 .about__stories {
   padding: 100px 0 80px 0;
   background: #fff; }
+  @media only screen and (max-width: 767px) {
+    .about__stories {
+      padding: 40px 0 30px 0; } }
   .about__stories__container {
     width: 100%;
     box-sizing: border-box;

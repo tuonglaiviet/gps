@@ -19,12 +19,15 @@
             left: 0;
             width: 54.5%;
             box-sizing: border-box;
-            font-family: 'BigCaslon-Medium';
+            
             font-size: 66px;
             padding: 30px 40px;
             display: block;
             letter-spacing: 9px;
             line-height: 79px;
+            @media only screen and (min-width: 768px) {
+                font-family: 'BigCaslon-Medium';
+            }
             @media only screen and (max-width: 1799px) {
                 font-size: 46px;
                 line-height: 59px;

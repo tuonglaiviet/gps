@@ -11,6 +11,7 @@
         border-bottom: 30px solid #20285C;
         @media only screen and (max-width: 767px) {
             padding: 20px 0 50px 0;
+            border-width: 9px;
         }
         &__container{
             width: 100%;
@@ -44,14 +45,23 @@
     &__video{
         height: 743px;
         width: 100%;
-        background: url(../../images/about-video.png) no-repeat center;
+        background-image: url(../../images/about-video.png);
         background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         position: relative;
+        @media only screen and (max-width: 767px) {
+            height: 275px;
+            background-image: url(../../images/about-video-mb.png);
+        }
         &__tit{
             font-size: 90px;
             letter-spacing: 2px;
             color: #fff;
             font-family: 'BigCaslon-Medium';
+            @media only screen and (max-width: 767px) {
+                font-size: 30px;
+            }
         }
         &__round{
             position: absolute;
@@ -70,7 +80,12 @@
             width: 160px;
             height: 160px;
             background: url(../../images/icon-play.png) no-repeat;
+            background-size: 100%;
             cursor: pointer;
+            @media only screen and (max-width: 767px) {
+                width: 70px;
+                height: 70px;
+            }
             &:hover{
                 opacity: 0.5;
             }
@@ -79,6 +94,17 @@
     &__locations{
         position: relative;
         border-bottom: 30px solid #20285C;
+        @media only screen and (max-width: 767px) {
+            border: none;
+            &:after{
+                content: '';
+                width: 70%;
+                border-bottom: 1px solid #A8AEAF;
+                position: absolute;
+                display: block;
+                left: 15%;
+            }
+        }
         &__info{
             display: block;
             width: 100%;
@@ -103,6 +129,8 @@
                 left: 0;
                 top: 0;
                 position: relative;
+                max-width: 100%;
+                padding: 40px 16px;
             }
             &--des{
                 margin: 60px 0 0 0;
@@ -111,27 +139,44 @@
                 @media only screen and (max-width: 1440px) {
                    padding: 0 6%;
                 }
-                @media only screen and (max-width: 1024px) {
+                @media only screen and (min-width: 992px) and (max-width: 1024px) {
                     font-size: 24px;
                     line-height: 33px;
                 }
-                @media only screen and (max-width: 991px) {
+                @media only screen and (min-width: 768px) and (max-width: 991px) {
                     font-size: 20px;
                     line-height: 29px;
+                }
+                @media only screen and (max-width: 767px) {
+                    width: 86%;
+                    margin: 15px auto 0 auto;
                 }
             }
             &--buttons{
                 margin:70px 0 0 0;
                 padding: 0;
+                width: 100%;
+                @media only screen and (max-width: 767px) {
+                    margin: 10px 0 0 0;
+                }
                 li{
                     display: inline-block;
                     padding: 0 40px;
                     @media only screen and (max-width: 1440px) {
                         padding: 0 15px;
                     }
+                    @media only screen and (max-width: 767px) {
+                        width: 100%;
+                        padding: 20px 0 0 0;
+                    }
                     .gbutton{
+                        
                         @media only screen and (max-width: 1440px) {
                             min-width: 180px;
+                        }
+                        @media only screen and (max-width: 767px) {
+                            width: 187px;
+                            margin: 0 auto;
                         }
                     }
                     &:first-child{
@@ -168,6 +213,9 @@
     &__stories{
         padding: 100px 0 80px 0;
         background: #fff;
+        @media only screen and (max-width: 767px) {
+            padding: 40px 0 30px 0;
+        }
         &__container{
             width: 100%;
             box-sizing: border-box;
