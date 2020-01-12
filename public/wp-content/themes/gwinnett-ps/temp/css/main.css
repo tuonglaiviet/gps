@@ -313,7 +313,7 @@ Media Query Mixins
         top: 0%; } }
     @media only screen and (max-width: 1199px) and (min-width: 768px) {
       .gbanner .top__banner__tit {
-        top: 10%; } }
+        top: 0%; } }
     @media only screen and (max-width: 991px) {
       .gbanner .top__banner__tit {
         display: none; } }
@@ -1507,15 +1507,36 @@ Media Query Mixins
 li {
   list-style: none; }
 
-.top__banner__contact__addcss {
-  background-image: url(../../images/Patient-Information-hero-image.png); }
+.top__banner__patient__addcss {
+  background-image: url(../../images/Patient-Information-hero-image.png);
+  position: relative;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 30px solid #20285C; }
+  @media only screen and (max-width: 991px) {
+    .top__banner__patient__addcss {
+      border-bottom: 10px solid #20285C; } }
   @media only screen and (max-width: 767px) {
-    .top__banner__contact__addcss .top__banner__tabs {
+    .top__banner__patient__addcss .top__banner__tabs {
       background-image: url(../../images/Patient-Information-hero-image-mb.png); } }
-  .top__banner__contact__addcss .top__banner__tab03 {
+  .top__banner__patient__addcss .top__banner__tab03 {
     background-image: url(../../images/ic-insurance.png); }
-  .top__banner__contact__addcss .top__banner__tab04 {
+  .top__banner__patient__addcss .top__banner__tab04 {
     background-image: url(../../images/top-icon-03.png); }
+  .top__banner__patient__addcss .top__banner__tit {
+    top: 0;
+    bottom: inherit;
+    width: unset;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 2px;
+    padding: 30px 49px 30px 100px; }
+    @media only screen and (max-width: 991px) {
+      .top__banner__patient__addcss .top__banner__tit {
+        display: none; } }
 
 .contact__intro {
   padding: 170px 0 160px 0;

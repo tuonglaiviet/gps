@@ -12,7 +12,7 @@
 
 ?>
 <?php get_header() ?>
-<section class="gbanner top__banner top__banner__contact__addcss">
+<section class="top__banner top__banner__patient__addcss">
 	<ul class="top__banner__tabs">
 		<li class="top__banner__icon">
 			<a href="#" class="top__banner__tab top__banner__tab01">
