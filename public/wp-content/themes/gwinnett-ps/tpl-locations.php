@@ -7,7 +7,7 @@
  */
 
 /*
- Template Name: Location Html Page
+ Template Name: Locations Page
  */
 
 ?>
