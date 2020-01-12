@@ -56,7 +56,6 @@
     text-decoration: none !important;
     display: table;
     min-width: 312px;
-    display: table;
     box-sizing: border-box;
     @media only screen and (max-width: 991px) {
         min-width: 187px;
@@ -118,6 +117,9 @@
     letter-spacing: 0.9px;
     font-family: 'BigCaslon-Medium';
     color: #5D5D5D;
+    @media only screen and (max-width: 991px) {
+       
+    }
 }
 .gp3,.gp3 p{
     font-size: 22px;

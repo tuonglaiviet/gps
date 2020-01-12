@@ -191,7 +191,6 @@ Media Query Mixins
   text-decoration: none !important;
   display: table;
   min-width: 312px;
-  display: table;
   box-sizing: border-box; }
   @media only screen and (max-width: 991px) {
     .gbutton, .gbuttonlight {
@@ -1254,15 +1253,39 @@ Media Query Mixins
     text-align: center;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0); }
+    @media only screen and (max-width: 1439px) {
+      .about__locations__info {
+        max-width: 1100px; } }
+    @media only screen and (max-width: 1240px) {
+      .about__locations__info {
+        max-width: 90%; } }
     .about__locations__info--des {
       margin: 60px 0 0 0;
-      padding: 0 15%; }
+      padding: 0 15%;
+      display: block; }
+      @media only screen and (max-width: 1440px) {
+        .about__locations__info--des {
+          padding: 0 6%; } }
+      @media only screen and (max-width: 1024px) {
+        .about__locations__info--des {
+          font-size: 24px;
+          line-height: 33px; } }
+      @media only screen and (max-width: 991px) {
+        .about__locations__info--des {
+          font-size: 20px;
+          line-height: 29px; } }
     .about__locations__info--buttons {
       margin: 70px 0 0 0;
       padding: 0; }
       .about__locations__info--buttons li {
         display: inline-block;
         padding: 0 40px; }
+        @media only screen and (max-width: 1440px) {
+          .about__locations__info--buttons li {
+            padding: 0 15px; } }
+        @media only screen and (max-width: 1440px) {
+          .about__locations__info--buttons li .gbutton {
+            min-width: 180px; } }
         .about__locations__info--buttons li:first-child {
           padding-left: 0; }
         .about__locations__info--buttons li:last-child {
@@ -1344,6 +1367,9 @@ Media Query Mixins
     vertical-align: middle; }
     .about__boxes__box.content {
       padding: 12%; }
+      @media only screen and (max-width: 1439px) {
+        .about__boxes__box.content {
+          padding: 8%; } }
     .about__boxes__box.thumb {
       background: url(../../images/about-partner.png) no-repeat center;
       background-size: cover; }
@@ -1354,6 +1380,10 @@ Media Query Mixins
       font-size: 30px;
       line-height: 43px;
       letter-spacing: 0.98px; }
+      @media only screen and (max-width: 1439px) {
+        .about__boxes__box--des, .about__boxes__box .about__boxes__box--des p {
+          font-size: 25px;
+          line-height: 35px; } }
 
 li {
   list-style: none; }
