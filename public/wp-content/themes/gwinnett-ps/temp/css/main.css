@@ -109,6 +109,10 @@ Media Query Mixins
 
 }
 */
+@media only screen and (max-width: 1199px) {
+  body {
+    padding-top: 62px; } }
+
 .tcontainer {
   width: 100%;
   display: block;
@@ -262,6 +266,39 @@ Media Query Mixins
   line-height: 40px;
   letter-spacing: 4px;
   color: #5D5D5D; }
+
+.gbanner {
+  height: 823px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 10px solid #20285C; }
+  @media only screen and (max-width: 1440px) and (min-width: 768px) {
+    .gbanner {
+      height: 600px; } }
+  @media only screen and (max-width: 767px) {
+    .gbanner {
+      height: 462px;
+      background-size: cover; } }
+  .gbanner .top__banner__tit {
+    top: 0;
+    bottom: inherit;
+    width: unset;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 2px;
+    padding: 30px 49px 30px 100px; }
+    @media only screen and (max-width: 1440px) and (min-width: 1200px) {
+      .gbanner .top__banner__tit {
+        top: 0%; } }
+    @media only screen and (max-width: 1199px) and (min-width: 768px) {
+      .gbanner .top__banner__tit {
+        top: 10%; } }
+    @media only screen and (max-width: 991px) {
+      .gbanner .top__banner__tit {
+        display: none; } }
 
 .header {
   padding: 60px 0 30px 0;
@@ -1186,6 +1223,12 @@ Media Query Mixins
       margin: 20px 0 0 0;
       display: block; }
 
+.about__banner {
+  background-image: url(../../images/about-banner.png) !important; }
+  @media screen and (max-width: 767px) {
+    .about__banner {
+      background-image: url(../../images/about-banner-mb.png) !important; } }
+
 .about__story {
   padding: 80px 0 110px;
   border-top: 30px solid #20285C;
@@ -1933,36 +1976,11 @@ li {
 li {
   list-style: none; }
 
-.top__banner.top__banner__location__addcss {
-  height: 823px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background: url(../../images/location-hero-image.png);
-  border-bottom: 10px solid #20285C; }
-  @media only screen and (max-width: 1440px) and (min-width: 768px) {
-    .top__banner.top__banner__location__addcss {
-      height: 600px; } }
+.top__banner__location__addcss {
+  background-image: url(../../images/location-hero-image.png); }
   @media only screen and (max-width: 767px) {
-    .top__banner.top__banner__location__addcss {
-      height: 524px;
-      background-size: cover; } }
-  .top__banner.top__banner__location__addcss .top__banner__tit {
-    top: 0;
-    bottom: inherit;
-    width: unset;
-    font-size: 60px;
-    line-height: 70px;
-    letter-spacing: 2px;
-    padding: 30px 49px 30px 100px; }
-    @media only screen and (max-width: 1440px) and (min-width: 1200px) {
-      .top__banner.top__banner__location__addcss .top__banner__tit {
-        top: 0%; } }
-    @media only screen and (max-width: 1199px) and (min-width: 768px) {
-      .top__banner.top__banner__location__addcss .top__banner__tit {
-        top: 10%; } }
-    @media only screen and (max-width: 991px) {
-      .top__banner.top__banner__location__addcss .top__banner__tit {
-        display: none; } }
+    .top__banner__location__addcss {
+      background-image: url(../../images/locations-banner-mb.png); } }
 
 .contact__intro.location-addstyle {
   background: url(../../images/location-intro-bg.png); }
@@ -2319,36 +2337,11 @@ li {
       .contact__map iframe {
         height: 240px; } }
 
-.top__banner.top__banner__service__addcss {
-  height: 823px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background: url(../../images/service-hero-image.png);
-  border-bottom: 10px solid #20285C; }
-  @media only screen and (max-width: 1440px) and (min-width: 768px) {
-    .top__banner.top__banner__service__addcss {
-      height: 600px; } }
+.top__banner__service__addcss {
+  background-image: url(../../images/service-hero-image.png); }
   @media only screen and (max-width: 767px) {
-    .top__banner.top__banner__service__addcss {
-      height: 524px;
-      background-size: cover; } }
-  .top__banner.top__banner__service__addcss .top__banner__tit {
-    top: 0;
-    bottom: inherit;
-    width: unset;
-    font-size: 60px;
-    line-height: 70px;
-    letter-spacing: 2px;
-    padding: 30px 49px 30px 100px; }
-    @media only screen and (max-width: 1440px) and (min-width: 1200px) {
-      .top__banner.top__banner__service__addcss .top__banner__tit {
-        top: 0%; } }
-    @media only screen and (max-width: 1199px) and (min-width: 768px) {
-      .top__banner.top__banner__service__addcss .top__banner__tit {
-        top: 10%; } }
-    @media only screen and (max-width: 991px) {
-      .top__banner.top__banner__service__addcss .top__banner__tit {
-        display: none; } }
+    .top__banner__service__addcss {
+      background-image: url(../../images/service-banner-mb.png); } }
 
 .contact__intro.service__addstyle .txt {
   max-width: 1070px; }

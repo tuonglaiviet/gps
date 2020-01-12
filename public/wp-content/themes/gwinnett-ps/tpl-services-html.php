@@ -12,7 +12,7 @@
 
 ?>
 <?php get_header() ?>
-    <section class="top__banner top__banner__service__addcss">
+    <section class="gbanner top__banner__service__addcss">
         <h2 class="top__banner__tit">Services</h2>
     </section>
     <section class="contact__intro service__addstyle">

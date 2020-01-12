@@ -12,7 +12,7 @@
 
 ?>
 <?php get_header() ?>
-<section class="top__banner top__banner__location__addcss">
+<section class="gbanner top__banner__location__addcss">
 	<h2 class="top__banner__tit">Our Locations</h2>
 </section>
 <section class="contact__intro location-addstyle">

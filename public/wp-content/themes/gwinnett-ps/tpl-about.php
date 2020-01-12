@@ -2,7 +2,7 @@
 <?php 
     get_header();
 ?>
-<section class="top__banner top__banner__location__addcss">
+<section class="gbanner about__banner">
 	<h2 class="top__banner__tit"><?php the_title() ?></h2>
 </section>
 <section class="about__story">

@@ -1,33 +1,8 @@
 $color_main: #9F2A24;
-.top__banner.top__banner__service__addcss{
-  height: 823px;
-  object-fit: cover;
-  background: url(../../images/service-hero-image.png);
-  border-bottom: 10px solid #20285C;
-  @media only screen and (max-width: 1440px) and (min-width: 768px){
-    height: 600px;
-  }
-  @media only screen and (max-width: 767px){
-    height: 524px;
-    background-size: cover;
-  }
-  .top__banner__tit{
-    top: 0;
-    bottom: inherit;
-    width: unset;
-    font-size: 60px;
-    line-height: 70px;
-    letter-spacing: 2px;
-    padding: 30px 49px 30px 100px;
-    @media only screen and (max-width: 1440px) and (min-width: 1200px){
-    top:0%;
-  }
-    @media only screen and (max-width: 1199px) and (min-width: 768px){
-      top:10%;
-    }
-    @media only screen and (max-width: 991px){
-      display: none;
-    }
+.top__banner__service__addcss{
+  background-image: url(../../images/service-hero-image.png);
+  @media only screen and (max-width: 767px) {
+    background-image: url(../../images/service-banner-mb.png);
   }
 }
 .contact__intro.service__addstyle{

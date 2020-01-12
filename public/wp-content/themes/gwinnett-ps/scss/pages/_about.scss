@@ -1,4 +1,10 @@
 .about{
+    &__banner{
+        background-image: url(../../images/about-banner.png) !important;
+        @media screen and (max-width: 767px) {
+            background-image: url(../../images/about-banner-mb.png) !important;
+        }
+    }
     &__story{
         padding: 80px 0 110px;
         border-top: 30px solid #20285C;

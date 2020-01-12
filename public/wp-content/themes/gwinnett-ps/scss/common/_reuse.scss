@@ -1,3 +1,8 @@
+body{
+    @media only screen and (max-width: 1199px) {
+        padding-top: 62px;
+    }
+}
 .tcontainer{
     width: 100%;
     display: block;
@@ -132,4 +137,37 @@
     line-height: 40px;
     letter-spacing: 4px;
     color: #5D5D5D;
+}
+.gbanner{
+  height: 823px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 10px solid #20285C;
+  @media only screen and (max-width: 1440px) and (min-width: 768px){
+    height: 600px;
+  }
+  @media only screen and (max-width: 767px){
+    height: 462px;
+    background-size: cover;
+  }
+  .top__banner__tit{
+    top: 0;
+    bottom: inherit;
+    width: unset;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 2px;
+    padding: 30px 49px 30px 100px;
+    @media only screen and (max-width: 1440px) and (min-width: 1200px){
+    top:0%;
+  }
+    @media only screen and (max-width: 1199px) and (min-width: 768px){
+      top:10%;
+    }
+    @media only screen and (max-width: 991px){
+      display: none;
+    }
+  }
 }
