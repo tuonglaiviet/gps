@@ -3,25 +3,27 @@ li{
   list-style: none;
 }
 .cmn__banner_noimg{
-  padding: 10% 40px;
-  border-bottom: 10px solid #20285C;
+  padding: 5% 40px;
   @media only screen and (max-width: 767px){
-    padding: 32% 40px 13% 40px;
+    padding: 10% 40px 10% 40px;
+    border-bottom: 10px solid #20285C;
   }
   .tit{
     color: $color_main;
     font-family: 'BigCaslon-Medium';
     font-size: 90px;
     text-align: center;
-    padding-bottom: 16px;
     letter-spacing: .2px;
     text-transform: uppercase;
+    padding-bottom: 50px;
     @media only screen and (max-width: 1440px) and (min-width: 768px){
       font-size: 70px;
+      padding-bottom: 40px;
     }
     @media only screen and (max-width: 767px){
      font-size: 30px;
       line-height: 36px;
+      padding-bottom: 16px;
     }
   }
   .text{
@@ -94,13 +96,17 @@ li{
         letter-spacing: .98px;
         font-family: 'Avenir-Book';
         margin-bottom: 0;
-        @media only screen and (max-width: 1680px) and (min-width: 1200px){
+        @media only screen and (max-width: 1680px) and (min-width: 1367px){
           font-size: 22px;
           line-height: 32px;
         }
-        @media only screen and (max-width: 1199px) and (min-width: 992px){
+        @media only screen and (max-width: 1366px) and (min-width: 1200px){
           font-size: 18px;
           line-height: 28px;
+        }
+        @media only screen and (max-width: 1199px) and (min-width: 992px){
+          font-size: 15px;
+          line-height: 25px;
         }
         @media only screen and (max-width: 991px){
           font-size: 10px;
@@ -129,13 +135,17 @@ li{
             letter-spacing: .98px;
             font-family: 'Avenir-Book';
             transition: 0.5s all ease-in-out;
-            @media only screen and (max-width: 1680px) and (min-width: 1200px){
+            @media only screen and (max-width: 1680px) and (min-width: 1367px){
               font-size: 22px;
               line-height: 32px;
             }
-            @media only screen and (max-width: 1199px) and (min-width: 992px){
+            @media only screen and (max-width: 1366px) and (min-width: 1200px){
               font-size: 18px;
               line-height: 28px;
+            }
+            @media only screen and (max-width: 1199px) and (min-width: 992px){
+              font-size: 15px;
+              line-height: 25px;
             }
             @media only screen and (max-width: 991px){
               font-size: 10px;
@@ -156,13 +166,17 @@ li{
             letter-spacing: .98px;
             font-family: 'Avenir-Book';
             transition: 0.5s all ease-in-out;
-            @media only screen and (max-width: 1680px) and (min-width: 1200px){
+            @media only screen and (max-width: 1680px) and (min-width: 1367px){
               font-size: 22px;
               line-height: 32px;
             }
-            @media only screen and (max-width: 1199px) and (min-width: 992px){
+            @media only screen and (max-width: 1366px) and (min-width: 1200px){
               font-size: 18px;
               line-height: 28px;
+            }
+            @media only screen and (max-width: 1199px) and (min-width: 992px){
+              font-size: 15px;
+              line-height: 25px;
             }
             @media only screen and (max-width: 991px){
               font-size: 10px;

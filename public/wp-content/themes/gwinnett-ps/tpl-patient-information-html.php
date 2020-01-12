@@ -40,7 +40,7 @@
        <p>We strive to keep our patients informed about pulmonary treatment options and our practice.</p>
     </div>
 </section>
-<section  class="contact__form">
+<section  class="contact__form patient__addstyle">
     <div class="contact__form__cover">
         <div class="text">
             <h3 class="tit">Request an appointment</h3>

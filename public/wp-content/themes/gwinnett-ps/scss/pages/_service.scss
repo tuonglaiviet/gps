@@ -12,7 +12,7 @@ $color_main: #9F2A24;
 }
 
 .service__items{
-  max-width: 1656px;
+  max-width: 1688px;
   margin: 0 auto;
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
@@ -21,6 +21,8 @@ $color_main: #9F2A24;
   display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
   flex-wrap: wrap;
   justify-content: flex-start;
+  padding-left: 16px;
+  padding-right: 16px;
   @media only screen and (max-width: 1919px) and (min-width: 992px){
     padding-right: 6%;
     padding-left: 6%;
@@ -192,7 +194,7 @@ $color_main: #9F2A24;
 
   }
   .list__items{
-    max-width: 1440px;
+    max-width: 1472px;
     margin: 0 auto;
     width: 100%;
     display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
@@ -202,6 +204,8 @@ $color_main: #9F2A24;
     display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
     flex-wrap: wrap;
     padding-top: 90px;
+    padding-left: 16px;
+    padding-right: 16px;
     @media only screen and (max-width: 767px){
       padding-top: 70px;
     }
