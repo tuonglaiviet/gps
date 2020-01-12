@@ -68,7 +68,7 @@
             <div class="about__boxes__box--des">
                 <p>Gwinnett Sleep is the most trusted sleep disorder center in Gwinnett County. The nationally-accredited center was founded in 2003 by Dr. Rajesh Jasani.</p>
             </div>
-            <a href="#" class="gbutton">START SLEEPING</a>
+            <a href="#" class="gbutton about__boxes__box--button">START SLEEPING</a>
         </div>
         <div class="about__boxes__box thumb"></div>
     </div>

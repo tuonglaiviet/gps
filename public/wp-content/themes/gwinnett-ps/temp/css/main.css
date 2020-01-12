@@ -217,6 +217,9 @@ Media Query Mixins
   line-height: 25px;
   border-bottom: 3px solid #9F2A24;
   text-decoration: none !important; }
+  @media only screen and (max-width: 767px) {
+    .gbutton2 {
+      font-size: 13px; } }
   .gbutton2:hover {
     color: #9F2A24;
     opacity: 0.5; }
@@ -558,6 +561,8 @@ Media Query Mixins
     @media only screen and (max-width: 991px) {
       .footer__right {
         width: 100%; } }
+    .footer__right ul {
+      padding-left: 0; }
     .footer__right .gform_wrapper {
       display: table;
       margin: 0 0 0 auto;
@@ -635,7 +640,7 @@ Media Query Mixins
               height: 27px;
               line-height: 27px;
               position: relative;
-              top: -4px;
+              top: 13px;
               float: left;
               margin-left: 10px; } }
           .footer__right .gform_wrapper form input[type=submit]:hover {
@@ -1384,6 +1389,9 @@ Media Query Mixins
     max-width: 1510px;
     margin: 0 auto;
     padding: 0 16px; }
+    @media only screen and (max-width: 767px) {
+      .about__stories__container {
+        padding: 0 28px; } }
   .about__stories__tit {
     text-align: left; }
   .about__stories__des {
@@ -1402,21 +1410,42 @@ Media Query Mixins
     float: left;
     width: 50%;
     margin: 55px 0 0 0; }
+    @media only screen and (max-width: 767px) {
+      .about__stories__box {
+        width: 100%;
+        margin: 28px 0 0 0; } }
     .about__stories__box img {
       max-width: 100%;
       height: auto;
       margin-bottom: 50px; }
+      @media only screen and (max-width: 767px) {
+        .about__stories__box img {
+          margin-bottom: 20px; } }
     .about__stories__box:nth-child(odd) {
       padding-right: 60px; }
+      @media only screen and (max-width: 767px) {
+        .about__stories__box:nth-child(odd) {
+          padding-right: 0; } }
     .about__stories__box:nth-child(even) {
       padding-left: 60px; }
+      @media only screen and (max-width: 767px) {
+        .about__stories__box:nth-child(even) {
+          padding-left: 0; } }
     .about__stories__box--tit {
-      color: #9F2A24; }
+      color: #9F2A24;
+      font-family: 'BigCaslon-Medium';
+      font-size: 20px;
+      letter-spacing: 0.2px;
+      line-height: 26px; }
     .about__stories__box--des {
       font-size: 15px;
       letter-spacing: 1.5px;
       line-height: 21px;
       margin: 0 0 8px 0; }
+      @media only screen and (max-width: 767px) {
+        .about__stories__box--des {
+          font-size: 12px;
+          line-height: 20px; } }
     .about__stories__box--button {
       text-transform: uppercase; }
 
@@ -1434,14 +1463,26 @@ Media Query Mixins
     height: 700px;
     box-sizing: border-box;
     vertical-align: middle; }
+    @media only screen and (max-width: 767px) {
+      .about__boxes__box {
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center; } }
     .about__boxes__box.content {
       padding: 12%; }
       @media only screen and (max-width: 1439px) {
         .about__boxes__box.content {
           padding: 8%; } }
+      @media only screen and (max-width: 767px) {
+        .about__boxes__box.content {
+          padding: 50px 0 50px 0; } }
     .about__boxes__box.thumb {
       background: url(../../images/about-partner.png) no-repeat center;
       background-size: cover; }
+      @media only screen and (max-width: 767px) {
+        .about__boxes__box.thumb {
+          height: 300px; } }
     .about__boxes__box--des {
       margin: 25px 0 30px 0; }
     .about__boxes__box--des, .about__boxes__box .about__boxes__box--des p {
@@ -1453,6 +1494,14 @@ Media Query Mixins
         .about__boxes__box--des, .about__boxes__box .about__boxes__box--des p {
           font-size: 25px;
           line-height: 35px; } }
+      @media only screen and (max-width: 767px) {
+        .about__boxes__box--des, .about__boxes__box .about__boxes__box--des p {
+          font-size: 13px;
+          letter-spacing: 0.6px;
+          line-height: 20px;
+          padding: 0 9%; } }
+    .about__boxes__box--button {
+      margin: 0 auto; }
 
 li {
   list-style: none; }

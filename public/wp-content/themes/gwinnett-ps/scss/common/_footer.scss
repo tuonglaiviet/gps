@@ -36,6 +36,9 @@
         @media only screen and (max-width: 991px) {
             width: 100%;
         }
+        ul{
+            padding-left: 0;
+        }
         .gform_wrapper {
             display: table;
             margin: 0 0 0 auto;
@@ -117,7 +120,7 @@
                         height: 27px;
                         line-height: 27px;
                         position: relative;
-                        top: -4px;
+                        top: 13px;
                         float: left;
                         margin-left: 10px;
                     }

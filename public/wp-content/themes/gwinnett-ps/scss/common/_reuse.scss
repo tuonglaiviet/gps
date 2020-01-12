@@ -84,6 +84,9 @@ body{
     line-height: 25px;
     border-bottom: 3px solid #9F2A24;
     text-decoration: none !important;
+    @media only screen and (max-width: 767px) {
+        font-size: 13px;
+    }
     &:hover{
         color: #9F2A24;
         opacity: 0.5;
