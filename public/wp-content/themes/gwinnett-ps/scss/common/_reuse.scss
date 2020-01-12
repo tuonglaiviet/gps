@@ -139,12 +139,13 @@ body{
     color: #5D5D5D;
 }
 .gbanner{
-  height: 823px;
-  object-fit: cover;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-bottom: 10px solid #20285C;
+    position: relative;
+    height: 823px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 10px solid #20285C;
   @media only screen and (max-width: 1440px) and (min-width: 768px){
     height: 600px;
   }

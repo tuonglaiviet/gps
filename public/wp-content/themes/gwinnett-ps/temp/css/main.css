@@ -268,6 +268,7 @@ Media Query Mixins
   color: #5D5D5D; }
 
 .gbanner {
+  position: relative;
   height: 823px;
   -o-object-fit: cover;
      object-fit: cover;
