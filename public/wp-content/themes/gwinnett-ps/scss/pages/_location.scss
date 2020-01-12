@@ -10,6 +10,8 @@ li{
 }
 .contact__intro.location-addstyle{
   background: url(../../images/location-intro-bg.png);
+  background-size: cover;
+  max-width: inherit;
 }
 .location-items{
   position: relative;
