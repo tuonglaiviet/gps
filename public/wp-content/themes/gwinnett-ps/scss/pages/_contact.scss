@@ -96,13 +96,17 @@ li{
         letter-spacing: .98px;
         font-family: 'Avenir-Book';
         margin-bottom: 0;
-        @media only screen and (max-width: 1680px) and (min-width: 1200px){
+        @media only screen and (max-width: 1680px) and (min-width: 1367px){
           font-size: 22px;
           line-height: 32px;
         }
-        @media only screen and (max-width: 1199px) and (min-width: 992px){
+        @media only screen and (max-width: 1366px) and (min-width: 1200px){
           font-size: 18px;
           line-height: 28px;
+        }
+        @media only screen and (max-width: 1199px) and (min-width: 992px){
+          font-size: 15px;
+          line-height: 25px;
         }
         @media only screen and (max-width: 991px){
           font-size: 10px;
@@ -131,13 +135,17 @@ li{
             letter-spacing: .98px;
             font-family: 'Avenir-Book';
             transition: 0.5s all ease-in-out;
-            @media only screen and (max-width: 1680px) and (min-width: 1200px){
+            @media only screen and (max-width: 1680px) and (min-width: 1367px){
               font-size: 22px;
               line-height: 32px;
             }
-            @media only screen and (max-width: 1199px) and (min-width: 992px){
+            @media only screen and (max-width: 1366px) and (min-width: 1200px){
               font-size: 18px;
               line-height: 28px;
+            }
+            @media only screen and (max-width: 1199px) and (min-width: 992px){
+              font-size: 15px;
+              line-height: 25px;
             }
             @media only screen and (max-width: 991px){
               font-size: 10px;
@@ -158,13 +166,17 @@ li{
             letter-spacing: .98px;
             font-family: 'Avenir-Book';
             transition: 0.5s all ease-in-out;
-            @media only screen and (max-width: 1680px) and (min-width: 1200px){
+            @media only screen and (max-width: 1680px) and (min-width: 1367px){
               font-size: 22px;
               line-height: 32px;
             }
-            @media only screen and (max-width: 1199px) and (min-width: 992px){
+            @media only screen and (max-width: 1366px) and (min-width: 1200px){
               font-size: 18px;
               line-height: 28px;
+            }
+            @media only screen and (max-width: 1199px) and (min-width: 992px){
+              font-size: 15px;
+              line-height: 25px;
             }
             @media only screen and (max-width: 991px){
               font-size: 10px;

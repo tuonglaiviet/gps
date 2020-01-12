@@ -199,9 +199,9 @@ li{
         color: $color_main;
         padding-bottom: 16px;
       }
-      padding-top: 100px;
+      padding-top: 45px;
       @media only screen and (max-width: 1440px) and (min-width: 768px){
-        padding-top: 70px;
+        padding-top: 50px;
         padding-left: 40px;
         padding-right: 40px;
       }
@@ -293,7 +293,11 @@ li{
         display: -ms-flexbox;      /* TWEENER - IE 10 */
         display: -webkit-flex;     /* NEW - Chrome */
         display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-        padding-bottom: 20px;
+        padding-bottom: 35px;
+        @media only screen and (max-width: 1440px) and (min-width: 768px){
+          padding-bottom: 20px;
+        }
+
         @media only screen and (max-width: 767px){
           display: inherit;
           padding-bottom: 0;
@@ -340,7 +344,7 @@ li{
           font-family: 'Avenir-Heavy';
           color: $color_main;
           height: 70px;
-          margin-top: 30px;
+          margin-top: 50px;
           cursor: pointer;
           transition: 0.5s all ease-in-out;
           &:hover{
@@ -357,11 +361,25 @@ li{
         }
       }
     }
+    .request__cover.addstyle{
+
+    }
   }
 
   .request__cover{
    /* background: #F5F5F5;*/
   }
+}
+.patient__addstyle{
+   .request__cover{
+     padding-top: 70px;
+     @media only screen and (max-width: 1440px) and (min-width: 768px){
+       padding-top: 20px;
+     }
+     @media only screen and (max-width: 767px){
+       padding-top: 0;
+     }
+   }
 }
 .contact__form.addstyle{
   background: rgba(242, 242, 242, 0.5);
