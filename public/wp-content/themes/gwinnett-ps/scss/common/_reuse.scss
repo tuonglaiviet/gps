@@ -95,6 +95,11 @@ body{
     letter-spacing: 2px;
     line-height: 126px;
     color: #9F2A24;
+    @media only screen and (max-width: 767px) {
+        font-size: 30px;
+        line-height: 60px;
+        letter-spacing: 2px;
+    }
 }
 .big__tit{
     font-family: 'BigCaslon-Medium';
@@ -122,8 +127,9 @@ body{
     letter-spacing: 0.9px;
     font-family: 'BigCaslon-Medium';
     color: #5D5D5D;
-    @media only screen and (max-width: 991px) {
-       
+    @media only screen and (max-width: 767px) {
+        font-size: 18px;
+        line-height: 24px;
     }
 }
 .gp3,.gp3 p{
@@ -131,6 +137,10 @@ body{
     letter-spacing: 1.3px;
     line-height: 32px;
     color: #5D5D5D;
+    @media only screen and (max-width: 767px) {
+        font-size: 13px;
+        line-height: 20px;
+    }
 }
 .gp4,.gp4 p{
     font-size: 31px;
@@ -146,13 +156,13 @@ body{
     background-size: cover;
     background-position: center;
     border-bottom: 10px solid #20285C;
-  @media only screen and (max-width: 1440px) and (min-width: 768px){
-    height: 600px;
-  }
-  @media only screen and (max-width: 767px){
-    height: 462px;
-    background-size: cover;
-  }
+    @media only screen and (max-width: 1440px) and (min-width: 768px){
+        height: 600px;
+    }
+    @media only screen and (max-width: 767px){
+        height: 462px;
+        background-size: cover;
+    }
   .top__banner__tit{
     top: 0;
     bottom: inherit;
