@@ -2251,7 +2251,8 @@ li {
       line-height: 43px;
       letter-spacing: .98px;
       font-family: 'Avenir-Book';
-      color: #5D5D5D; }
+      color: #5D5D5D;
+      margin: 0; }
       @media only screen and (max-width: 767px) {
         .location-items .left .txt p {
           font-size: 10px;
@@ -2325,7 +2326,7 @@ li {
         font-size: 30px;
         line-height: 36px;
         padding-bottom: 16px; } }
-  .cmn__banner_noimg .text {
+  .cmn__banner_noimg .text p {
     color: #5D5D5D;
     font-size: 46px;
     line-height: 54px;
@@ -2334,11 +2335,11 @@ li {
     max-width: 1140px;
     margin: 0 auto; }
     @media only screen and (max-width: 1440px) and (min-width: 768px) {
-      .cmn__banner_noimg .text {
+      .cmn__banner_noimg .text p {
         font-size: 38px;
         line-height: 46px; } }
     @media only screen and (max-width: 767px) {
-      .cmn__banner_noimg .text {
+      .cmn__banner_noimg .text p {
         font-size: 18px;
         line-height: 24px; } }
 
@@ -2512,7 +2513,10 @@ li {
               justify-content: space-between;
       -webkit-box-align: center;
               align-items: center;
-      background: #f2f2f2; }
+      background: #f2f2f2;
+      text-decoration: none; }
+      .contact__items__cover .right .row1:hover {
+        opacity: 0.5; }
       .contact__items__cover .right .row1 .tit {
         width: 50%;
         display: inline-block;
@@ -2520,7 +2524,8 @@ li {
         text-align: center;
         font-size: 42px;
         letter-spacing: .1px;
-        font-family: 'BigCaslon-Medium'; }
+        font-family: 'BigCaslon-Medium';
+        text-decoration: none; }
         @media only screen and (max-width: 1440px) and (min-width: 992px) {
           .contact__items__cover .right .row1 .tit {
             font-size: 32px;
