@@ -180,7 +180,7 @@
                         padding: 20px 0 0 0;
                     }
                     .gbutton{
-                        
+                        display: block;
                         @media only screen and (max-width: 1440px) {
                             min-width: 180px;
                         }
@@ -320,6 +320,7 @@
             }
             &--button{
                 text-transform: uppercase;
+                font-size: 13px;
             }
         }
     }
@@ -383,7 +384,7 @@
                 }
             }
             &--button{
-                margin: 0 auto;
+                margin: 0 auto 0 0;
             }
         }
     }

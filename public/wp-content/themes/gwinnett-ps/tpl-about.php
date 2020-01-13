@@ -3,48 +3,160 @@
     get_header();
 ?>
 <section class="gbanner about__banner">
-	<h2 class="top__banner__tit"><?php the_title() ?></h2>
+	<h1 class="top__banner__tit"><?php the_title() ?></h1>
 </section>
+<?php 
+    $sub_title = get_field('sub_title');
+    $description = get_field('description');
+    $description_smaller = get_field('description_smaller');
+    if($sub_title || $description || $description_smaller):
+?>
 <section class="about__story">
     <div class="about__story__container">
-        <h2 class="about__story__tit main__tit">Our Story</h2>
+        <?php 
+            if($sub_title):
+        ?>
+        <h2 class="about__story__tit main__tit"><?php echo $sub_title ?></h2>
+        <?php 
+            endif;
+        ?>
+        <?php 
+            if($description):
+        ?>
         <div class="about__story__des gp2">
-            <p>Gwinnett Pulmonary & Sleep was founded in 1983 by Lawrence Kaplan, M.D with a mission of providing the highest quality care in pulmonary, critical care and sleep services and treatments to patients throughout Gwinnett County and areas north of Atlanta. </p>
+            <?php echo $description ?>
         </div>
+        <?php 
+            endif;
+        ?>
+        <?php 
+            if($description_smaller):
+        ?>
         <div class="about__story__des02 gp3">        
-            <p>Decades later, patient satisfaction remains our top priority. It shows every day. Our team of 10 board-certified physicians, as well as nurses and administrative personnel, is dedicated to improving your lung health through a comprehensive approach to diagnosis and treatment of pulmonary disorders.</p>
-            <p>We accomplish this with professionalism, compassion, guaranteed access to our medical professionals, and empathy. Contact us today to start your journey to better breathing. </p>
+            <?php echo $description_smaller ?>
         </div>
+        <?php 
+            endif;
+        ?>
     </div>
 </section>
-<section class="about__video">
+<?php 
+    endif;
+?>
+<?php 
+    $history_title = get_field('history_title');
+    $history_image = get_field('history_image');
+    $history_image_mobile = get_field('history_image_mobile');
+    $history_video = get_field('history_video');
+    if($history_title || $history_image || $history_image_mobile || $history_video):
+        if($history_image_mobile):
+?>
+        <style>
+            @media only screen and (max-width: 767px) {
+                .about__video{
+                    background-image: url(<?php echo $history_image_mobile ?>);
+                }
+            }
+        </style>
+        <?php endif; ?>
+<section class="about__video" <?php if($history_image) echo 'style="background-image: url('.$history_image.')"' ?>>
     <div class="about__video__round">
-        <h2 class="about__video__tit">Our History</h2>
-        <span class="about__video__play" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"></span>
+        <?php 
+            if($history_title):
+        ?>
+        <h2 class="about__video__tit"><?php echo $history_title ?></h2>
+        <?php 
+            endif;
+        ?>
+        <?php 
+            if($history_video):
+        ?>
+        <span class="about__video__play" data-fancybox href="<?php echo $history_video ?>"></span>
+        <?php 
+            endif;
+        ?>
     </div>
 </section>
+<?php 
+    endif;
+?>
+<?php 
+    $location_title = get_field('location_title');
+    $intro_content = get_field('intro_content',42);
+    if($location_title || $intro_content):
+?>
 <section class="about__locations">
     <div class="about__locations__info">
-        <h3 class="about__locations__info--tit big__tit">Our Locations</h3>
+        <?php 
+            if($location_title):
+        ?>
+        <h3 class="about__locations__info--tit big__tit"><?php echo $location_title ?></h3>
+        <?php 
+            endif;
+        ?>
+        <?php  
+            if($intro_content):
+        ?>
         <div class="about__locations__info--des gp4">
-            Enjoy amazing service at three convenient locations in Gwinnett County. Our practice is affiliated with the Gwinnett Medical Center’s Lawrenceville and Duluth campuses.
+            <?php echo nl2br($intro_content) ?>
         </div>
+        <?php 
+            endif;
+        ?>
+        <?php 
+            if( have_rows('locations',42) ):
+        ?>
         <ul class="about__locations__info--buttons">
-            <li><a href="#" class="gbutton">LAWRENCEVILLE</a></li>
-            <li><a href="#" class="gbutton">Duluth</a></li>
-            <li><a href="#" class="gbutton">Hamilton Mill</a></li>
+            <?php 
+                while ( have_rows('locations',42) ) : the_row();
+                $location_name = get_sub_field('name',42);
+                $location_link = get_sub_field('link',42);
+                if($location_link):
+                ?>
+                    <li><a href="<?php echo $link ?>" title="<?php echo $location_name ?>" class="gbutton"><?php echo $location_name ?></a></li>
+                <?php 
+                else:
+                ?>
+                    <li><span class="gbutton"><?php echo $location_name ?></span></li>
+                <?php   
+                endif;
+                endwhile;
+            ?>
         </ul>
+        <?php 
+            endif;
+        ?>
     </div>
     <div class="about__locations__mapround">
         <div id="map" class="about__locations__map"></div>
     </div>
 </section>
+<?php 
+    endif;
+?>
+<?php 
+    $stories_title = get_field('stories_title');
+    $stories_description = get_field('stories_description');
+    if($stories_title || $stories_description):
+?>
 <section class="about__stories">
     <div class="about__stories__container">
-        <h3 class="big__tit about__stories__tit">Our Success Stories</h3>
+        <?php 
+            if($stories_title):
+        ?>
+            <h3 class="big__tit about__stories__tit"><?php echo $stories_title ?></h3>
+        <?php 
+            endif;
+        ?>
+        <?php 
+            if($stories_description):
+        ?>
         <div class="about__stories__des">
-            <p>Gwinnett Pulmonary & Sleep is dedicated to excellence in pulmonary patient care, and is constantly seeking to advance information and technology in the field of pulmonary health.</p>
+            <?php echo $stories_description ?>
         </div>
+        <?php 
+            endif;
+        ?>
         <div class="about__stories__boxes">
             <div class="about__stories__box">
                 <img src="<?php bloginfo('template_directory'); ?>/images/about-success-01.png"/>
@@ -61,32 +173,66 @@
         </div>
     </div>
 </section>
+<?php 
+    endif;
+?>
+<?php 
+    if( have_rows('partners') ):
+?>
 <section class="about__boxes">
+    <?php 
+        while ( have_rows('partners') ) : the_row();
+            $partner_title = get_sub_field('title');
+            $partner_description = get_sub_field('description');
+            $partner_button_name = get_sub_field('button_name');
+            $partner_link = get_sub_field('link');
+            $partner_thumb = get_sub_field('thumb');
+    ?>
     <div class="about__boxes__line">
         <div class="about__boxes__box content">
-            <h3 class="big__tit about__boxes__box--tit">Our Partners</h3>
+            <h3 class="big__tit about__boxes__box--tit"><?php echo $partner_title ?></h3>
             <div class="about__boxes__box--des">
-                <p>Gwinnett Sleep is the most trusted sleep disorder center in Gwinnett County. The nationally-accredited center was founded in 2003 by Dr. Rajesh Jasani.</p>
+                <?php echo $partner_description ?>
             </div>
-            <a href="#" class="gbutton about__boxes__box--button">START SLEEPING</a>
+            <?php 
+                if($partner_button_name):
+            ?>
+            <a href="<?php if($partner_link) echo $partner_link ?>" class="gbutton about__boxes__box--button"><?php echo $partner_button_name ?></a>
+            <?php 
+                endif;
+            ?>
         </div>
-        <div class="about__boxes__box thumb"></div>
+        <div class="about__boxes__box thumb" style="background-image: url(<?php echo $partner_thumb ?>)"></div>
     </div>
+    <?php 
+        endwhile;
+    ?>
 </section>
+<?php 
+    endif;
+?>
+<?php 
+    $locations = get_field('locations',42);
+    if($locations):
+?>
 <script src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyBBHTA4GehSH_vtE6ildGWV8XBV7Z80YGc&language=en&region=EN" 
           type="text/javascript"></script>
   <script type="text/javascript">
     var locations = [
-      ['Bondi Beach', -33.890542, 151.274856, 4],
-      ['Coogee Beach', -33.923036, 151.259052, 5],
-      ['Cronulla Beach', -34.028249, 151.157507, 3],
-      ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
-      ['Maroubra Beach', -33.950198, 151.259302, 1]
+        <?php 
+            $i;
+            foreach($locations as $location):    $i++;
+        ?>
+            ['<?php echo $location["name"] ?>', <?php echo $location['address']['lat'] ?>, <?php echo $location['address']['lng']?>, 4],
+
+        <?php 
+            endforeach;
+        ?>
     ];
 
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 14,
-      center: new google.maps.LatLng(-33.92, 151.25),
+      zoom: 11,
+      center: new google.maps.LatLng(<?php echo $locations[$i-1]['address']['lat'] ?>, <?php echo $locations[$i-1]['address']['lng'] ?>),
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
 
@@ -109,5 +255,6 @@
     }
   </script>
 <?php 
+    endif;
     get_footer();
 ?>

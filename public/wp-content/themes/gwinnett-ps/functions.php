@@ -173,3 +173,12 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 show_admin_bar(false);
+function my_acf_init() {
+	
+	acf_update_setting('google_api_key', 'AIzaSyBBHTA4GehSH_vtE6ildGWV8XBV7Z80YGc');
+}
+
+add_action('acf/init', 'my_acf_init');
+
+add_image_size( 'our-success-thumb', 700, 370 );
+add_image_size( 'our-success-mb-thumb', 280, 370 );

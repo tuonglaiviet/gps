@@ -1,51 +1,130 @@
 <?php /* Template Name: Our Success Stories */ ?>
 <?php get_header() ?>
+<?php 
+    $sub_title = get_field('sub_title');
+    $description = get_field('description');
+    if($sub_title || $description):
+?>
 <section class="oursuccess__top">
     <div class="oursuccess__top__container">
-        <h1 class="oursuccess__top__tit main__tit">Our Success Stories</h1>
+        <?php 
+            if($sub_title):
+        ?>
+        <h2 class="oursuccess__top__tit main__tit"><?php echo $sub_title ?></h2>
+        <?php 
+            endif;
+        ?>
+        <?php 
+            if($description):
+        ?>
         <div class="oursuccess__top__des gp2">
-            <p>At Gwinnett Pulmonary Group, our top priority is patient satisfaction. Below you’ll find testimonials from our current and former patients about their experiences with our facilities, our physicians and our service. If you would like to submit a testimonial to be featured on the website, please contact us.</p>
+            <?php echo $description ?>
         </div>
+        <?php 
+            endif;
+        ?>
     </div>
 </section>
+<?php 
+    endif;
+?>
 <section class="oursuccess__test">
     <div class="oursuccess__test__container">
         <a href="#" class="oursuccess__test__button gbutton">TESTIMONIALS</a>
         <div class="oursuccess__test__around">
             <div class="oursuccess__test__thumb"></div>
             <div class="oursuccess__test__content">
-                <h2 class="oursuccess__test__content--tit big__tit">Barbara’s Survival</h2>
+                <h1 class="oursuccess__test__content--tit big__tit"><?php echo get_the_title(); ?></h1>
+                <?php  
+                    $content = get_field('content');
+                    if($content):
+                ?>
                 <div class="oursuccess__test__content--des">
-                    <p>Having survived one pulmonary embolism before moving from Florida to Georgia, I was fearful of not being able to find a new pulmonary group of physicians who offered equally comprehensive services and quality care. My fears were proved unfounded when the highly recommended Gwinnett Pulmonary & Sleep came to my attention. Over the past six years, under their care, not only have I survived a second embolism, but I have used many (if not all) of the group’s services in addressing shortness of breath, osteoporosis, hypertension, scoliosis, depression, allergic rhinitis, sleep apnea, blood-oxygen problems, COPD and high cholesterol.</p>
-                    <p>I could not expect more than the consistent high quality care I have received and, of equal importance, the genuine care and helpfulness of the entire, highly competent, non-medical staff. They are the best. - Barbara C.</p>
+                    <?php echo $content; ?>
                 </div>
+                <?php 
+                    endif;
+                ?>
             </div>
         </div>
     </div>
 </section>
-<section class="about__locations oursuccess__locations">
-    <div class="about__locations__info">
-        <h3 class="about__locations__info--tit big__tit">LEARN MORE <br class="visible-xs">ABOUT OUR LOCATION</h3>
-        <div class="about__locations__info--des gp4">
-            Enjoy amazing service at three convenient locations in Gwinnett County. Our practice is affiliated with the Gwinnett Medical Center’s Lawrenceville and Duluth campuses.
+<?php
+    $location_title = get_field('location_title');
+    $intro_content = get_field('intro_content',42);
+    if($location_title || $intro_content):
+?>
+    <section class="about__locations oursuccess__locations">
+        <div class="about__locations__info">
+            <?php 
+                if($location_title):
+            ?>
+            <h3 class="about__locations__info--tit big__tit"><?php echo $location_title ?></h3>
+            <?php 
+                endif;
+            ?>
+            <div class="about__locations__info--des gp4">
+                <?php echo $intro_content ?>
+            </div>
+            <?php 
+                if( have_rows('locations',42) ):
+            ?>
+            <ul class="about__locations__info--buttons">
+                <?php 
+                    while ( have_rows('locations',42) ) : the_row();
+                    $location_name = get_sub_field('name',42);
+                    $location_link = get_sub_field('link',42);
+                    if($location_link):
+                    ?>
+                        <li><a href="<?php echo $link ?>" title="<?php echo $location_name ?>" class="gbutton"><?php echo $location_name ?></a></li>
+                    <?php 
+                    else:
+                    ?>
+                        <li><span class="gbutton"><?php echo $location_name ?></span></li>
+                    <?php   
+                    endif;
+                    endwhile;
+                ?>
+            </ul>
+            <?php 
+                endif;
+            ?>
         </div>
-        <ul class="about__locations__info--buttons">
-            <li><a href="#" class="gbutton">LAWRENCEVILLE</a></li>
-            <li><a href="#" class="gbutton">Duluth</a></li>
-            <li><a href="#" class="gbutton">Hamilton Mill</a></li>
-        </ul>
-    </div>
-</section>
+    </section>
+<?php 
+    endif;
+    if( have_rows('partners',3) ):
+?>
 <section class="about__boxes">
+    <?php 
+        while ( have_rows('partners',3) ) : the_row();
+            $partner_title = get_sub_field('title');
+            $partner_description = get_sub_field('description');
+            $partner_button_name = get_sub_field('button_name');
+            $partner_link = get_sub_field('link');
+            $partner_thumb = get_sub_field('thumb');
+    ?>
     <div class="about__boxes__line">
         <div class="about__boxes__box content">
-            <h3 class="big__tit about__boxes__box--tit">Our Partners</h3>
+            <h3 class="big__tit about__boxes__box--tit"><?php echo $partner_title ?></h3>
             <div class="about__boxes__box--des">
-                <p>Gwinnett Sleep is the most trusted sleep disorder center in Gwinnett County. The nationally-accredited center was founded in 2003 by Dr. Rajesh Jasani.</p>
+                <?php echo $partner_description ?>
             </div>
-            <a href="#" class="gbutton about__boxes__box--button">START SLEEPING</a>
+            <?php 
+                if($partner_button_name):
+            ?>
+            <a href="<?php if($partner_link) echo $partner_link ?>" class="gbutton about__boxes__box--button"><?php echo $partner_button_name ?></a>
+            <?php 
+                endif;
+            ?>
         </div>
-        <div class="about__boxes__box thumb"></div>
+        <div class="about__boxes__box thumb" style="background-image: url(<?php echo $partner_thumb ?>)"></div>
     </div>
+    <?php 
+        endwhile;
+    ?>
 </section>
+<?php 
+    endif;
+?>
 <?php get_footer() ?>
