@@ -7,7 +7,7 @@
  */
 
 /*
- Template Name: Our Providers Html Page
+ Template Name: Our Providers Page
  */
 
 ?>
