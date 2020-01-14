@@ -7,7 +7,7 @@
  */
 
 /*
- Template Name: Single Service Html Page
+ Template Name: Single Page Design
  */
 
 ?>
@@ -15,7 +15,7 @@
 <section class="cmn__banner_noimg">
 	<h2 class="tit">PULMONARY FUNCTION TEST</h2>
     <div class="text">
-        What are pulmonary function tests? Pulmonary function tests (PFTs) measure how well your lungs take in and exhale air and how efficiently they transfer oxygen into the blood. There are several different tests. Spirometry measures how well the lungs exhale (breathe out). Lung volume measures how well the lungs inhale (breathe in). Testing the diffusion capacity of carbon monoxide (DLCO) shows how efficiently the lungs transfer oxygen from the air into the bloodstream.
+        <p>What are pulmonary function tests? Pulmonary function tests (PFTs) measure how well your lungs take in and exhale air and how efficiently they transfer oxygen into the blood. There are several different tests. Spirometry measures how well the lungs exhale (breathe out). Lung volume measures how well the lungs inhale (breathe in). Testing the diffusion capacity of carbon monoxide (DLCO) shows how efficiently the lungs transfer oxygen from the air into the bloodstream.</p>
     </div>
 </section>
 <section class="service__single__post_cover">

@@ -109,9 +109,15 @@
     <?php 
         endif;
     ?>
-
+<?php 
+    $bottom_image = get_field('bottom_image');
+    if($bottom_image):
+?>
 <section class="providers-bg-last">
-    <img class="img" src="<?php bloginfo('template_directory') ?>/images/Our-Providers-last-bg.png" alt="" />
+    <img class="img" src="<?php echo $bottom_image ?>" alt="<?php the_title() ?>" />
 </section>
+<?php 
+    endif;
+?>
 
 <?php get_footer() ?>

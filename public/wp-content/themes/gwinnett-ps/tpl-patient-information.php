@@ -7,7 +7,7 @@
  */
 
 /*
- Template Name: Patient Information Html Page
+ Template Name: Patient Information Page
  */
 
 ?>
