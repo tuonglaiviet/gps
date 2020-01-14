@@ -3213,7 +3213,11 @@ li {
         padding-top: 25px;
         padding-bottom: 0; } }
     .providers__post .post__cover.active .content .description {
-      display: none; }
+      display: block;
+      max-width: none;
+      padding-bottom: 0; }
+      .providers__post .post__cover.active .content .description p {
+        max-width: none; }
   .providers__post .post__cover.active .ac__content {
     max-width: none; }
     @media only screen and (max-width: 767px) {

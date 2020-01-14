@@ -212,7 +212,12 @@ $color_main: #9F2A24;
         padding-bottom: 0;
       }
       .description{
-       display: none;
+       display: block;
+        max-width: none;
+        padding-bottom: 0;
+        p{
+          max-width: none;
+        }
       }
     }
     .ac__content{
