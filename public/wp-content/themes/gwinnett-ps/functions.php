@@ -182,3 +182,5 @@ add_action('acf/init', 'my_acf_init');
 
 add_image_size( 'our-success-thumb', 700, 370 );
 add_image_size( 'our-success-mb-thumb', 280, 370 );
+add_image_size( 'mb-thumb', 376, 467 );
+add_image_size( 'mb-small-thumb', 375, 262 );
